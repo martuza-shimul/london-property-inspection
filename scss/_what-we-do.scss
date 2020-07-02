@@ -1,0 +1,69 @@
+.what-we-do {
+	// background: linear-gradient(
+	// 		109.6deg,
+	// 		rgba($text-color, 1) 11.2%,
+	// 		rgba($primary-color, 1) 81.1%
+	// 	),
+	// 	url("../img/hero1.jpg") no-repeat center;
+	// background-image: linear-gradient( 109.6deg,  rgba(14,11,56,1) 11.2%, rgba(239,37,37,1) 91.1% );
+	background-size: cover;
+	background-attachment: fixed;
+	background-blend-mode: multiply;
+	// color: $white;
+	padding: 15vh 0;
+	
+	
+}
+
+.wwd-content-block {
+	margin: 1.5rem 0;
+	padding: 2.5rem 1rem;
+	// border: 2px dashed $secondary-color;
+	background: rgba($white, 0.7);
+	box-shadow: rgba($text-color, 0.2) 0px 5px 5px -5px;
+	
+	.icon-holder{
+		margin-bottom: 1rem;
+	}
+	h5 {
+		font-size: 1.2rem;
+		font-weight: 600;
+		letter-spacing: 1px;
+		line-height: 1.9rem;
+		text-transform: capitalize;
+		margin-bottom: 1rem;
+	}
+	p {
+		font-size: 1rem;
+		font-weight: 500;
+		
+	}
+	&:hover{
+		background: rgba($white, 1);
+		box-shadow: rgba($text-color, 0.5) 0px 10px 10px -10px;
+		transform: translateY(-0.25rem);
+		transition: 0.4s ease-in;
+	}
+}
+
+.what-we-do-dif {
+	padding: 10vh 0;
+	font-size: 1.1rem;
+	font-weight: 500;
+	// font-family: "Josefin Sans", sans-serif;
+}
+
+.what-we-do-dif {
+	// background: lighten($primary-color, 7);
+	background: $white;
+	// color: $text-rev;
+	padding: 5vh 0;
+
+	.heading {
+		h1 {
+			font-size: 2rem;
+			text-transform: capitalize;
+			font-family: "Roboto", sans-serif;
+		}
+	}
+}

@@ -1,0 +1,124 @@
+.heading {
+	padding: 0 0 30px 0;
+	h1 {
+		font-size: 2rem;
+		line-height: 3.1rem;
+		font-weight: 900;
+		color: $secondary-color;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 2px;
+		// font-family: "Montserrat", sans-serif;
+	}
+}
+
+.button {
+	background: $primary-color;
+
+	color: $secondary-color;
+
+	padding: 1rem 1.5rem;
+	font-weight: 700;
+	border: 1.5px solid $primary-color;
+	border-radius: 0px;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+
+	&:hover {
+		background: $secondary-color;
+		color: $text-rev;
+		border-color: $secondary-color;
+		// box-shadow: 3px 0px 8px 2px $shad;
+		box-shadow: rgba($text-color, 0.5) 0px 10px 10px -10px;
+		// transform: scale(1.01);
+		transition: 0.3s ease-in;
+		z-index: 3;
+	}
+}
+.button-second {
+	background: $secondary-color;
+	color: $white;
+	border-color: $secondary-color;
+	// letter-spacing: 2px;
+	&:hover {
+		background: $primary-color;
+		color: $secondary-color;
+		border-color: $primary-color;
+	}
+}
+.wb-button{
+	border: none;
+	background: transparent;
+	font-size: 1.18rem;
+	line-height: 2rem;
+	color: $primary-color;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	font-weight: 500;
+
+	i{
+		color: $secondary-color;
+		margin-left: 0.5rem;
+	}
+	&:hover {
+		text-decoration: none;
+		color: $secondary-color;
+		
+		transition:  0.3s ease-in;
+
+		i{
+			color: $primary-color;
+			transform: translateX(25px);
+			transition: 0.2s ease-in;
+			
+		}
+		
+	}
+}
+.hide {
+	display: none;
+	// transition: display 0.4s ease-out;
+}
+.red {
+	color: $warning;
+	margin-top: 10px;
+}
+
+.form-group {
+	input,
+	textarea {
+		border-color: $primary-color;
+	}
+}
+
+.equal {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+}
+.equal > [class*="col-"] {
+	display: flex;
+	flex-direction: column;
+}
+
+.bold {
+	font-weight: 900;
+}
+
+.seo {
+	width: 98%;
+	margin: 0 auto;
+	color: $text-rev;
+	h4 {
+		font-weight: 300;
+		font-size: 0.5rem;
+	}
+}
+a {
+	color: $primary-color;
+	&:hover {
+		color: $text-color;
+	}
+}

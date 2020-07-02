@@ -1,0 +1,50 @@
+.modal-body{
+	background: $primary-color;
+}
+.quote-engine-wrapper {
+	
+	h5 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin: 10px 0 25px 0;
+		text-align: center;
+	}
+	.content {
+		font-size: 0.9rem;
+		display: block;
+		margin: 0.3rem 2rem;
+	}
+	p{
+		input[type=radio] {
+			
+			width: 16px;
+			height: 16px;
+			margin-right: 10px;
+	}
+		span{
+			font-size: 1.1rem;
+			line-height: 1.9rem;
+			// color: $text-rev;
+		}
+	}
+	.button{
+		background: transparent;
+		border-color: $secondary-color;
+		color: $secondary-color;
+		&:hover{
+			background: $text-rev;
+			border-color: $text-rev;
+		}
+	}
+}
+// .modal-content {
+// 	border-radius: 3rem 3rem 0.3rem 0.3rem;
+// }
+.modal-footer {
+	padding: 0.3rem;
+	background: $secondary-color;
+	.button:hover{
+		background: $text-rev;
+		color: $secondary-color;
+	}
+}

@@ -1,0 +1,374 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<!-- Bootstrap CDN for css -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		
+		<!-- custom css -->
+		<link rel="stylesheet" href="./dist/css/style.css" />
+
+		<title>HandyMan London</title>
+
+				<!-- Favicons
+			================================================== -->
+			<link rel="icon" href="./dist/img/favicon.png" type="image/x-icon" />
+			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./dist/img/favicon.png" />
+			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./dist/img/favicon.png" />
+			<link rel="apple-touch-icon-precomposed" href="./dist/img/favicon.png" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav class="navbar navbar-expand-lg navbar-light" id="menu">
+				<a href="./index.html" class="navbar-brand">
+					<img
+						class="img-fluid img-responsive"
+						src="./dist/img/logo.png"
+						alt="London PPC logo"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<!-- <li class="nav-item ">
+							<a  class="nav-link" href="#home"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li> -->
+						<li class="nav-item">
+							<a class="nav-link scroll" href="./index.html#services">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="./index.html#how-it-works">how it works</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="./index.html#why-us">why us</a>
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link scroll" href="#process">process</a>
+						</li> -->
+						<li class="nav-item">
+							<a class="nav-link scroll" href="./index.html#contact">support</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="./index.html#areas">coverage</a>
+						</li>
+						
+						<li class="nav-item">
+							<a
+								class="nav-link button"
+								id="button"
+								href="#"
+								data-toggle="modal"
+								data-target=".bd-example-modal-lg"
+								>Book now <i class="fas fa-long-arrow-alt-right"></i></a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="modal-wrapper">
+				<div class="container-lg">
+					<!-- Modal -->
+					<div class="modal fade bd-example-modal-lg " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<!-- <div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div> -->
+								<div class="modal-body">
+									<div class="quote-engine-wrapper d-flex justify-content-center">
+										<form enctype="multipart/form-data" action="./dist/php/data.php" method="POST">
+											<div class="first">
+												<h5 class="center-align">Book a service for?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="first" value="home" type="radio"  />
+														<span>Home</span>
+														
+													</label>
+												</p>
+											
+												<p>
+													<label>
+														<input  class="with-gap" name="first" type="radio" value="office"  />
+														<span>Office</span>
+														
+													</label>
+												</p>
+												<button onclick="handleRadioClick()"  type="button" class="btn button">Continue <i class="fas fa-long-arrow-alt-right"></i></button>
+											</div>
+
+											<div class="second hide">
+												<h5 class="center-align">Which service you want to Book?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="Cleaning Service" type="radio"  />
+														<span>Cleaning Service</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="Handyman Service" type="radio"  />
+														<span>Handyman Service</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="Appliances Repair" type="radio"  />
+														<span>Appliances Repair</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="Pack & Shift" type="radio"  />
+														<span>Pack & Shift</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="Painting" type="radio"  />
+														<span>Painting</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="Furniture assembly" type="radio"  />
+														<span>Furniture assembly</span>
+													</label>
+												</p>
+												
+												
+												<button onclick="handleSecond()"  type="button" class="btn button">Continue <i class="fas fa-long-arrow-alt-right"></i></button>
+											</div>
+											
+											<div class="third hide">
+												<h5 class="center-align">When do you want this service?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="As soon as possible" />
+														<span>As soon as possible</span>
+													</label>
+												</p>
+												
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="Within Today"  />
+														<span>Within Today</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="Within Tomorrow"  />
+														<span>Within Tomorrow</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="Within this Week"  />
+														<span>Within this Week</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="I don't have a specific date in mind"  />
+														<span>I don't have a specific date in mind</span>
+													</label>
+												</p>  
+												<button onclick="handleThird()"  type="button" class="btn button">Continue <i class="fas fa-long-arrow-alt-right"></i></button>
+											</div>
+											<div class="fourth hide">
+												<h5 class="center-align">Who will provide the materials?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="I'll provide the materials" />
+														<span>I'll provide the materials</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="You have to provide the materials"  />
+														<span>You have to provide the materials</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="I want to talk to the expert about this" />
+														<span>I want to talk to the expert about this</span>
+													</label>
+												</p>
+												
+												<button onclick="handleFourth()"  type="button" class="btn button">Continue <i class="fas fa-long-arrow-alt-right"></i></button>
+											</div>
+											<div class="last hide">
+													<h5>Fill up the form to complete this request</h5>
+												<div class="row">
+													
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Name: "
+																name="first-name"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Postcode : "
+																name="postcode"
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="email"
+																class="form-control"
+																id="exampleInputEmail1"
+																placeholder="Email: "
+																aria-describedby="emailHelp"
+																name="email"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Phone: "
+																name="phone"
+																required
+															/>
+														</div>
+													</div>
+													
+													<!-- <div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Vehicle Pick-up Postcode"
+																name="pick_post"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Vehicle Drop off Postcode"
+																name="drop_post"
+																required
+															/>
+														</div>
+													</div> -->
+													<div class="col-md-12">
+															<div class="form-group">
+																	<textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Extra notes" rows="3" required></textarea>
+																</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<label for="file">Upload Image or Video (optional):
+																<!-- <input id="file" type="file" name="uploaded_file"></input> -->
+															</label>
+															
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input id="file" type="file" name="uploaded_file"></input>
+														</div>
+													</div>
+													
+												</div>
+												<button class="btn button">Submit <i class="fas fa-paper-plane ml-2"></i></button>
+											</div>   
+										</form>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn button" data-dismiss="modal">X</button>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="home" class="hero">
+				<div class="container-lg">
+					<div class="row  ">
+
+						<div class="col-md-8 offset-md-2">
+							<div class="hero-text">
+								<div class="heading">
+									<h1>Your Request Has Been Sent Sucessfully. One Of Our Advisor Will Contact You As Soon As Possible</h1>
+								</div>
+								<div class="hero-button">
+									<button type="button" class="btn button"  data-toggle="modal" data-target=".bd-example-modal-lg">Book now <i class="fas fa-long-arrow-alt-right ml-2"></i></button>
+									<a  class="btn button button-second ml-5" href="./index.html"  >Back to home</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+		</div>
+
+		<!-- bootstrap js CDN -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- fontawesome cdn -->
+		<script src="https://kit.fontawesome.com/27ad0ca7fa.js" crossorigin="anonymous"></script>
+
+		<script src="./dist/js/app.js"></script>
+	</body>
+</html>

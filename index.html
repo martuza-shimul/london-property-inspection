@@ -1,0 +1,1025 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<!-- Bootstrap CDN for css -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		
+		<!-- custom css -->
+		<link rel="stylesheet" href="./scss/style.css" />
+
+		<title>HandyMan London</title>
+
+				<!-- Favicons
+			================================================== -->
+			<link rel="icon" href="./dist/img/favicon.png" type="image/x-icon" />
+			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./dist/img/favicon.png" />
+			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./dist/img/favicon.png" />
+			<link rel="apple-touch-icon-precomposed" href="./dist/img/favicon.png" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<section class="whatsapp-icon">
+				<a href="https://wa.me/447957573632"><i class="fab fa-whatsapp-square fa-3x"></i></a>
+			</section>
+			<nav class="navbar navbar-expand-lg navbar-light" id="menu">
+				<a href="#" class="navbar-brand">
+					<img
+						class="img-fluid img-responsive"
+						src="./dist/img/logo.png"
+						alt="London PPC logo"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<!-- <li class="nav-item ">
+							<a  class="nav-link" href="#home"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li> -->
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#services">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#how-it-works">how it works</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#why-us">why us</a>
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link scroll" href="#process">process</a>
+						</li> -->
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#contact">support</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#areas">coverage</a>
+						</li>
+						
+						<li class="nav-item">
+							<a
+								class="nav-link button"
+								id="button"
+								href="#"
+								data-toggle="modal"
+								data-target=".bd-example-modal-lg"
+								>Book now <i class="fas fa-long-arrow-alt-right"></i></a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="modal-wrapper">
+				<div class="container-lg">
+					<!-- Modal -->
+					<div class="modal fade bd-example-modal-lg " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<!-- <div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div> -->
+								<div class="modal-body">
+									<div class="quote-engine-wrapper d-flex justify-content-center">
+										<form enctype="multipart/form-data" action="./dist/php/data.php" method="POST">
+											<div class="first">
+												<h5 class="center-align">Book a service for?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="first" value="home" type="radio"  />
+														<span>Home</span>
+														
+													</label>
+												</p>
+											
+												<p>
+													<label>
+														<input  class="with-gap" name="first" type="radio" value="office"  />
+														<span>Office</span>
+														
+													</label>
+												</p>
+												<button onclick="handleRadioClick()"  type="button" class="btn button">Continue <i class="fas fa-long-arrow-alt-right"></i></button>
+											</div>
+
+											<div class="second hide">
+												<h5 class="center-align">Which service you want to Book?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="Cleaning Service" type="radio"  />
+														<span>Cleaning Service</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="Handyman Service" type="radio"  />
+														<span>Handyman Service</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="Appliances Repair" type="radio"  />
+														<span>Appliances Repair</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="Pack & Shift" type="radio"  />
+														<span>Pack & Shift</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="Painting" type="radio"  />
+														<span>Painting</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="Furniture assembly" type="radio"  />
+														<span>Furniture assembly</span>
+													</label>
+												</p>
+												
+												
+												<button onclick="handleSecond()"  type="button" class="btn button">Continue <i class="fas fa-long-arrow-alt-right"></i></button>
+											</div>
+											
+											<div class="third hide">
+												<h5 class="center-align">When do you want this service?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="As soon as possible" />
+														<span>As soon as possible</span>
+													</label>
+												</p>
+												
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="Within Today"  />
+														<span>Within Today</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="Within Tomorrow"  />
+														<span>Within Tomorrow</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="Within this Week"  />
+														<span>Within this Week</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="I don't have a specific date in mind"  />
+														<span>I don't have a specific date in mind</span>
+													</label>
+												</p>  
+												<button onclick="handleThird()"  type="button" class="btn button">Continue <i class="fas fa-long-arrow-alt-right"></i></button>
+											</div>
+											<div class="fourth hide">
+												<h5 class="center-align">Who will provide the materials?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="I'll provide the materials" />
+														<span>I'll provide the materials</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="You have to provide the materials"  />
+														<span>You have to provide the materials</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="I want to talk to the expert about this" />
+														<span>I want to talk to the expert about this</span>
+													</label>
+												</p>
+												
+												<button onclick="handleFourth()"  type="button" class="btn button">Continue <i class="fas fa-long-arrow-alt-right"></i></button>
+											</div>
+											<div class="last hide">
+													<h5>Fill up the form to complete this request</h5>
+												<div class="row">
+													
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Name: "
+																name="first-name"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Postcode : "
+																name="postcode"
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="email"
+																class="form-control"
+																id="exampleInputEmail1"
+																placeholder="Email: "
+																aria-describedby="emailHelp"
+																name="email"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Phone: "
+																name="phone"
+																required
+															/>
+														</div>
+													</div>
+													
+													<!-- <div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Vehicle Pick-up Postcode"
+																name="pick_post"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Vehicle Drop off Postcode"
+																name="drop_post"
+																required
+															/>
+														</div>
+													</div> -->
+													<div class="col-md-12">
+															<div class="form-group">
+																	<textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Extra notes" rows="3" required></textarea>
+																</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<label for="file">Upload Image or Video (optional):
+																<!-- <input id="file" type="file" name="uploaded_file"></input> -->
+															</label>
+															
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input id="file" type="file" name="uploaded_file"></input>
+														</div>
+													</div>
+													
+												</div>
+												<button class="btn button">Submit <i class="fas fa-paper-plane ml-2"></i></button>
+											</div>   
+										</form>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn button" data-dismiss="modal">X</button>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="home" class="hero">
+				<div class="container-lg">
+					<div class="row  ">
+
+						<div class="col-md-8 offset-md-2">
+							<div class="hero-text">
+								<div class="heading">
+									<h1>Book Professional Cleaning And Handyman Services, On-Demand!</h1>
+								</div>
+								<div class="hero-button">
+									<button type="button" class="btn button"  data-toggle="modal" data-target=".bd-example-modal-lg">Book now <i class="fas fa-long-arrow-alt-right ml-2"></i></button>
+									<a  class="btn button button-second ml-5" href="#options"  >how it works</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services" id="services">
+				<div class="container-md">
+					<div class="heading">
+						<h1>our services</h1>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="card-holder">
+								<div class="ch-image-holder">
+									<img src="./dist/img/cleaning.jpeg" alt="image" class="img-fluid">
+								</div>
+								<div class="ch-content-holder">
+									<div class="sub-heading">
+										<h5>Cleaning Service</h5>
+										<div class="price">
+											<h5>£39/hour</h5>
+										</div>
+									</div>
+									
+									<div class="star">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="ch-footer">
+									<div class="row">
+										<div class="col">
+												<a
+												class="wb-button"
+												href="#"
+												data-toggle="modal"
+												data-target=".bd-example-modal-lg"
+												>Book now <i class="fas fa-long-arrow-alt-right "></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="card-holder">
+								<div class="ch-image-holder">
+									<img src="./dist/img/handy.jpeg" alt="image" class="img-fluid">
+								</div>
+								<div class="ch-content-holder">
+									<div class="sub-heading">
+										<h5>Handyman Service</h5>
+										<div class="price">
+											<h5>£31/hour</h5>
+										</div>
+									</div>
+									
+									<div class="star">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="ch-footer">
+									<div class="row">
+										<div class="col">
+												<a
+												class="wb-button"
+												href="#"
+												data-toggle="modal"
+												data-target=".bd-example-modal-lg"
+												>Book now <i class="fas fa-long-arrow-alt-right "></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="card-holder">
+								<div class="ch-image-holder">
+									<img src="./dist/img/applience.jpeg" alt="image" class="img-fluid">
+								</div>
+								<div class="ch-content-holder">
+									<div class="sub-heading">
+										<h5>Appliances repair</h5>
+										<div class="price">
+											<h5>£49/hour</h5>
+										</div>
+									</div>
+									
+									<div class="star">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="ch-footer">
+									<div class="row">
+										<div class="col">
+												<a
+												class="wb-button"
+												href="#"
+												data-toggle="modal"
+												data-target=".bd-example-modal-lg"
+												>Book now <i class="fas fa-long-arrow-alt-right "></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="card-holder">
+								<div class="ch-image-holder">
+									<img src="./dist/img/pack-and-shift.jpeg" alt="image" class="img-fluid">
+								</div>
+								<div class="ch-content-holder">
+									<div class="sub-heading">
+										<h5>Pack & Shift</h5>
+										<div class="price">
+											<h5>£59/hour</h5>
+										</div>
+									</div>
+									
+									<div class="star">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="ch-footer">
+									<div class="row">
+										<div class="col">
+												<a
+												class="wb-button"
+												href="#"
+												data-toggle="modal"
+												data-target=".bd-example-modal-lg"
+												>Book now <i class="fas fa-long-arrow-alt-right "></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="card-holder">
+								<div class="ch-image-holder">
+									<img src="./dist/img/painting.jpeg" alt="image" class="img-fluid">
+								</div>
+								<div class="ch-content-holder">
+									<div class="sub-heading">
+										<h5>Painting</h5>
+										<div class="price">
+											<h5>£42/hour</h5>
+										</div>
+									</div>
+									
+									<div class="star">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="ch-footer">
+									<div class="row">
+										<div class="col">
+												<a
+												class="wb-button"
+												href="#"
+												data-toggle="modal"
+												data-target=".bd-example-modal-lg"
+												>Book now <i class="fas fa-long-arrow-alt-right "></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="card-holder">
+								<div class="ch-image-holder">
+									<img src="./dist/img/handy.jpeg" alt="image" class="img-fluid">
+								</div>
+								<div class="ch-content-holder">
+									<div class="sub-heading">
+										<h5>Furniture assembly</h5>
+										<div class="price">
+											<h5>£29/hour</h5>
+										</div>
+									</div>
+									
+									<div class="star">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="ch-footer">
+									<div class="row">
+										<div class="col">
+												<a
+												class="wb-button"
+												href="#"
+												data-toggle="modal"
+												data-target=".bd-example-modal-lg"
+												>Book now <i class="fas fa-long-arrow-alt-right "></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<section id="how-it-works" class="why-us scrollspy">
+					<div class="container">
+							<div class="heading">
+								<h1>how HandyMan london works</h1>
+							</div>
+							
+							<!--first section-->
+							<div class="row align-items-center how-it-works">
+								<div class="col-2 text-center bottom">
+									<div class="circle">1</div>
+								</div>
+								<div class="col-7">
+									<div class="ec-iconbox">
+										<div class="ec-icon-holder">
+											<img src="./dist/img/booking.png" alt="Icon">
+										</div>
+										<div class="ec-icon-heading">
+											<h5>Book</h5>
+										</div>
+										<div class="ec-icon-text">
+											<p>Easiest way to book a service is online! Provide necessary details while we take you through a quick booking journey. If you find it difficult, call <a href="tel:020 8088 3646">020 8088 3646 </a>. Our team should guide you through</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--path between 1-2-->
+							<div class="row timeline">
+								<div class="col-2">
+									<div class="corner top-right"></div>
+								</div>
+								<div class="col-8">
+									<hr/>
+								</div>
+								<div class="col-2">
+									<div class="corner left-bottom"></div>
+								</div>
+							</div>
+							<!--second section-->
+							<div class="row align-items-center justify-content-end how-it-works">
+								<div class="col-7 text-right">
+									<div class="ec-iconbox ">
+										<div class="ec-icon-holder">
+											<img src="./dist/img/confirm.png" alt="Icon">
+										</div>
+										<div class="ec-icon-heading">
+											<h5>Confirm</h5>
+										</div>
+										<div class="ec-icon-text">
+											<p>Get a call from our customer manager, confirm your schedule right away</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-2 text-center full">
+									<div class="circle">2</div>
+								</div>
+							</div>
+							<!--path between 2-3-->
+							<div class="row timeline">
+								<div class="col-2">
+									<div class="corner right-bottom"></div>
+								</div>
+								<div class="col-8">
+									<hr/>
+								</div>
+								<div class="col-2">
+									<div class="corner top-left"></div>
+								</div>
+							</div>
+							<!--third section-->
+							<div class="row align-items-center how-it-works">
+								<div class="col-2 text-center top">
+									<div class="circle">3</div>
+								</div>
+								<div class="col-7">
+									<div class="ec-iconbox">
+										<div class="ec-icon-holder">
+											<img src="./dist/img/relax.png" alt="Icon">
+										</div>
+										<div class="ec-icon-heading">
+											<h5>Relax</h5>
+										</div>
+										<div class="ec-icon-text">
+											<p>Sit back & relax while a verified service professional do your job and help you become more productive in life!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+							
+						</div>
+				
+			</section>
+			<section id="why-us" class="what-we-do scrollspy">
+				<div class="container-md">
+					<div class="row">
+						<div class="col">
+							<div class="heading-content">
+								<div class="heading">
+									<h1>WHY choose handyman london</h1>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="wwd-content-wrapper">
+						<div class="row ">
+							<div class="col">
+								<div class="row wwd-content text-center">
+									
+									<div class="col-sm-6 col-md-4">
+										<div class="wwd-content-block">
+											<div class="icon-holder">
+												<img src="./dist/img/online-reservation.png" alt="icon" class="img-fluid">
+											</div>
+											<h5>Online Booking  </h5>
+											<p>Book any service instantly using a secure mobile app and website. Track your booking with real time data feed and tasker location. Rate your tasker and give feedback. </p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-4">
+										<div class="wwd-content-block">
+											<div class="icon-holder">
+												<img src="./dist/img/secured.png" alt="icon" class="img-fluid">
+											</div>
+											<h5>Easy & Secured </h5>
+											<p>Getting things done with HandyMama is easy. Besides, your data is secured in our cloud system, powered by latest technologies and security tools. </p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-4">
+										<div class="wwd-content-block">
+											<div class="icon-holder">
+												<img src="./dist/img/varified.png" alt="icon" class="img-fluid">
+											</div>
+											<h5>Verified & Insured Pro  </h5>
+											<p>All HandyMama registered service professionals are thoroughly verified, 4-steps trained and covered safety and health insurance. </p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-4">
+										<div class="wwd-content-block">
+											<div class="icon-holder">
+												<img src="./dist/img/fast-delivery.png" alt="icon" class="img-fluid">
+											</div>
+											<h5>Fastest Job Delivery </h5>
+											<p>Don’t wait days, weeks. You book a service with HandyMama, you get it done in hours. </p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-4">
+										<div class="wwd-content-block">
+											<div class="icon-holder">
+												<img src="./dist/img/warranty.png" alt="icon" class="img-fluid">
+											</div>
+											<h5>Service Warranty </h5>
+											<p>All the services are covered under 7 days service warranty. No questions asked.</p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-4">
+										<div class="wwd-content-block">
+											<div class="icon-holder">
+												<img src="./dist/img/satisfied.png" alt="icon" class="img-fluid">
+											</div>
+											<h5>Satisfaction Guaranteed  </h5>
+											<p>If you are not happy with our service, we do it again and again until you smile. </p>
+										</div>
+									</div>
+
+									
+									
+								</div>
+							</div>
+							<!-- <div class="col-lg-6 col-md-5">
+								<div class="wu-content-image">
+									<img src="./dist/img/hero1.jpg" class="img-fluid" alt="image">
+								</div>
+							</div> -->
+							
+						</div>
+						
+					</div>
+				</div>
+			</section>
+
+			<section class="review" id="review">
+				<div class="container-md">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="heading-content">
+								<div class="heading">
+									<h1>clients feedback</h1>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="review-content-wrapper">
+						<div class="row align-items-center">
+							<div class=" col-md-4 ">
+								<div class="review-iconbox text-center">
+									<div class="review-icon">
+										<!-- <img src="./dist/img/booking.png" alt="Icon"> -->
+										<i class="fas fa-user-tie fa-5x"></i>
+									</div>
+									<div class="review-rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="reviewer-info">
+										<h6 class="name">Martuza Shimul</h6>
+										<p class="company ">- Software Engineer at Digital Ambitions</p>
+									</div>
+									<div class="review-text">
+											
+										<p><i class="fas fa-quote-left fa-3x quote"></i>Just wowww very good service professional helpers. Nice behaviour. Finaly within budget you can get the best service!
+										</p>
+										<!-- <blockquote class="blockquote">
+											<p class="mb-0"> <span class="quote">"</span> Just wowww very good service professional helpers. Nice behaviour. Finaly within budget you can get the best service!</p>
+											<footer class="blockquote-footer">Software Engineer in <cite title="Source Title">Digital Ambitions</cite></footer>
+										</blockquote> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 ">
+								<div class="review-iconbox text-center">
+									<div class="review-icon">
+										<!-- <img src="./dist/img/booking.png" alt="Icon"> -->
+										<i class="fas fa-user-tie fa-5x"></i>
+									</div>
+									<div class="review-rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="reviewer-info">
+										<h6 class="name">Adam Bakkar</h6>
+										<p class="company ">- CEO at Urban Links</p>
+									</div>
+									<div class="review-text">	
+										<p><i class="fas fa-quote-left fa-3x quote"></i> Absolutely professional team of people, always prompt and clear in communication, and most importantly - unlike other electricians/mechanics - their team always showed up in due time and finished their work properly.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class=" col-md-4 ">
+								<div class="review-iconbox text-center">
+									<div class="review-icon">
+										<!-- <img src="./dist/img/booking.png" alt="Icon"> -->
+										<i class="fas fa-user-tie fa-5x"></i>
+									</div>
+									<div class="review-rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="reviewer-info">
+										<h6 class="name">Martuza Shimul</h6>
+										<p class="company ">- Software Engineer at Digital Ambitions</p>
+									</div>
+									<div class="review-text">
+											
+										<p><i class="fas fa-quote-left fa-3x quote"></i>Just wowww very good service professional helpers. Nice behaviour. Finaly within budget you can get the best service!
+										</p>
+										<!-- <blockquote class="blockquote">
+											<p class="mb-0"> <span class="quote">"</span> Just wowww very good service professional helpers. Nice behaviour. Finaly within budget you can get the best service!</p>
+											<footer class="blockquote-footer">Software Engineer in <cite title="Source Title">Digital Ambitions</cite></footer>
+										</blockquote> -->
+									</div>
+								</div>
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</section>
+		
+			<section id="contact" class="contact scrollspy" >
+				<div class="container-md">
+					<div class="row">
+						<div class="col">
+							<div class="heading">
+								<h1 class=" text-uppercase">Contact Us</h1>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-6">
+							<div class="contact-form">
+								<form enctype="multipart/form-data" action="./dist/php/contact.php" method="POST">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder=" Name: "
+													name="name"
+													required
+												/>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Postcode : "
+													name="postcode"
+													required
+												/>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input
+													type="email"
+													class="form-control"
+													id="exampleInputEmail1"
+													placeholder="Email: "
+													aria-describedby="emailHelp"
+													name="email"
+													required
+												/>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Phone: "
+													name="phone"
+													required
+												/>
+											</div>
+										</div>
+										
+										
+										<!-- <div class="col-md-6">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Pick-up Postcode"
+													name="pick-post"
+													required
+												/>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Drop off Postcode"
+													name="drop-post"
+													required
+												/>
+											</div>
+										</div> -->
+										<div class="col-md-12">
+												<div class="form-group">
+														<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3" name="message" required></textarea>
+													</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="file">Upload Image or Video (optional):
+													<!-- <input id="file" type="file" name="uploaded_file"></input> -->
+												</label>
+												
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input id="file" type="file" name="uploaded_file"></input>
+											</div>
+										</div>
+										
+									</div>
+
+
+									<button type="submit" class="btn button">Submit <i class="fas fa-paper-plane ml-2"></i></button>
+								</form>
+							</div>
+						</div>
+						<div class="offset-sm-1 col-sm-5 col-md-5">
+							<div class="contact-box ">
+								<h3 class="">
+									 <small>For a prompt response</small>  <br />
+									contact us now
+								</h3>
+								<p>
+									<img src="./dist/img/call.png" alt="Contact phone number" />
+									<span><a href="tel:020 8088 3646">020 8088 3646 </a></span>
+								</p>
+								<p>
+									<img src="./dist/img/send.png" alt="Contact phone number" />
+									<span>support@handyman-london.co.uk</span>
+								</p>
+								<p class="contact-address">
+									<img src="./dist/img/location.png" alt="Contact phone number" class="img-fluid"/>
+									<span>Kemp House, 160 City Road, London, United Kingdom, EC1V 2NX</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sticky-mobile d-sm-block d-md-none">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+									<p class="center-align"><img src="./dist/img/call-white.png" alt="Contact">  <a class="" href="tel:020 8088 3646">020 8088 3646</a></p>
+							</div>
+						</div>
+					</div>
+				</section>
+			<section class="footer d-none d-md-block">
+				<div class="container-md">
+					<p class="copy text-center">Copyright © 2020 HandyMan London. All rights reserved.</p>
+					<p class=" text-center"><a href="./privacy-policy.html">Privacy Policy</a></p>
+				</div>
+			</section>
+		</div>
+
+		<!-- bootstrap js CDN -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<!-- fontawesome cdn -->
+		<script src="https://kit.fontawesome.com/27ad0ca7fa.js" crossorigin="anonymous"></script>
+		<!-- cookies code -->
+		<script type="text/javascript" id="cookieinfo"
+        src="//cookieinfoscript.com/js/cookieinfo.min.js">
+    </script>
+		<script src="./dist/js/app.js"></script>
+	</body>
+</html>
