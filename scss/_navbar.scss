@@ -1,11 +1,37 @@
+.top-header {
+	background-color: $primary-color;
+	color: $white;
+	font-size: 0.9rem;
+	padding: 0.2rem 0;
+	p {
+		margin-bottom: 0;
+		@media (max-width: 767px) {
+			text-align: center;
+			&.phone {
+				display: none;
+			}
+		}
+	}
+	.slogan {
+		font-size: 1.1rem;
+		font-weight: 500;
+	}
+	a {
+		color: $white;
+	}
+	img {
+		height: 0.8rem;
+	}
+}
+
 .navbar {
-	color: $text-rev;
+	color: $primary-color;
 	text-transform: capitalize;
-	position: fixed;
+	background-color: $text-rev;
 	// top: 0;
 	// left: 0;
 	height: 85px;
-	width: 100vw;
+	width: 100%;
 	padding: 0 10vw;
 	z-index: 99;
 	transition: 0.4s ease-out;
@@ -17,7 +43,7 @@
 		.nav-item {
 			padding: 0rem 0.2rem;
 			.nav-link {
-				color: $secondary-color;
+				color: $text-color;
 				padding: 0.5rem 1rem;
 				font-weight: 600;
 				letter-spacing: 1px;
@@ -26,65 +52,54 @@
 				// font-family: "Raleway", sans-serif;
 				// font-family: "Montserrat", sans-serif;
 				font-family: "Roboto", sans-serif;
-				font-size: 0.95rem;
+				font-size: 1rem;
 
 				&:hover {
 					// background: rgba($primary-color, 0.5);
-					background: lighten($primary-color, 5);
+					background: $secondary-color;
 				}
 			}
 			.button {
-				padding: 0.5rem 1rem;
 				color: $white;
-				 background: $secondary-color;
-				 border-color: $secondary-color;
+				background: $secondary-color;
 				letter-spacing: 2px;
-
+				border: 0;
 				&:hover {
-					background: transparent;
-					color: $secondary-color;
-					border-color: $secondary-color;
+					background: $primary-color;
 				}
 			}
 		}
 	}
 
 	&.scrolled {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
 		height: 65px;
 		background: rgba($primary-color, 0.9);
 		.navbar-nav {
 			.nav-item {
 				.nav-link {
-					// color: $se-color;
-					// font-weight: 600;
-
+					color: $white;
+					@media (max-width: 989px) {
+						color: $text-color;
+					}
 					&:hover {
-						// background: rgba($primary-color, 0.5);
-						background: lighten($text-rev, 5);
+						background: $secondary-color;
+						color: $text-color;
 					}
 				}
 				.button {
 					// color: $text-rev;
-					
+
 					&:hover {
 						background: transparent;
-					
-					border-color: $secondary-color;
+						color: $secondary-color;
+						border-color: $secondary-color;
 					}
 				}
 			}
 		}
-		// #button {
-		// 	background: $text-rev;
-		// 	border: 1px solid $text-rev;
-		// 	color: $primary-color;
-		// 	&:hover {
-		// 		background: $secondary-color;
-		// 		border: 1px solid $secondary-color;
-		// 		transition: 0.6s ease-in;
-		// 		z-index: 3;
-		// 		color: $text-rev;
-		// 	}
-		// }
 	}
 }

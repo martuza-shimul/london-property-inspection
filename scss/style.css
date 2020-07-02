@@ -7,16 +7,21 @@
   font-size: 2rem;
   line-height: 3.1rem;
   font-weight: 900;
-  color: #cae63f;
+  color: #1b75b9;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
 }
 
+button:focus {
+  outline: 0 !important;
+  border: 0 !important;
+}
+
 .button {
   background: #1b75b9;
-  color: #cae63f;
-  padding: 1rem 1.5rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
   font-weight: 700;
   border: 1.5px solid #1b75b9;
   border-radius: 0px;
@@ -26,7 +31,7 @@
 
 .button:hover {
   background: #cae63f;
-  color: #f2f2f2;
+  color: #363839;
   border-color: #cae63f;
   -webkit-box-shadow: rgba(54, 56, 57, 0.5) 0px 10px 10px -10px;
           box-shadow: rgba(54, 56, 57, 0.5) 0px 10px 10px -10px;
@@ -43,7 +48,7 @@
 
 .button-second:hover {
   background: #1b75b9;
-  color: #cae63f;
+  color: #fff;
   border-color: #1b75b9;
 }
 
@@ -133,12 +138,45 @@ a:hover {
   color: #363839;
 }
 
+.top-header {
+  background-color: #1b75b9;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.2rem 0;
+}
+
+.top-header p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .top-header p {
+    text-align: center;
+  }
+  .top-header p.phone {
+    display: none;
+  }
+}
+
+.top-header .slogan {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.top-header a {
+  color: #fff;
+}
+
+.top-header img {
+  height: 0.8rem;
+}
+
 .navbar {
-  color: #f2f2f2;
+  color: #1b75b9;
   text-transform: capitalize;
-  position: fixed;
+  background-color: #f2f2f2;
   height: 85px;
-  width: 100vw;
+  width: 100%;
   padding: 0 10vw;
   z-index: 99;
   -webkit-transition: 0.4s ease-out;
@@ -154,44 +192,57 @@ a:hover {
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
-  color: #cae63f;
+  color: #363839;
   padding: 0.5rem 1rem;
   font-weight: 600;
   letter-spacing: 1px;
   border-radius: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  background: #1e83cf;
+  background: #cae63f;
 }
 
 .navbar .navbar-nav .nav-item .button {
-  padding: 0.5rem 1rem;
   color: #fff;
   background: #cae63f;
-  border-color: #cae63f;
   letter-spacing: 2px;
+  border: 0;
 }
 
 .navbar .navbar-nav .nav-item .button:hover {
-  background: transparent;
-  color: #cae63f;
-  border-color: #cae63f;
+  background: #1b75b9;
 }
 
 .navbar.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 65px;
   background: rgba(27, 117, 185, 0.9);
 }
 
+.navbar.scrolled .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+
+@media (max-width: 989px) {
+  .navbar.scrolled .navbar-nav .nav-item .nav-link {
+    color: #363839;
+  }
+}
+
 .navbar.scrolled .navbar-nav .nav-item .nav-link:hover {
-  background: white;
+  background: #cae63f;
+  color: #363839;
 }
 
 .navbar.scrolled .navbar-nav .nav-item .button:hover {
   background: transparent;
+  color: #cae63f;
   border-color: #cae63f;
 }
 
@@ -245,12 +296,12 @@ a:hover {
 }
 
 .hero {
-  height: 100vh;
+  height: 80vh;
   background: url("../dist/img/main-hero.jpg") no-repeat bottom center;
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply;
-  padding: 30vh 0 20vh 0;
+  padding: 15vh 0;
   position: relative;
   text-align: center;
   color: #363839;
@@ -1098,6 +1149,15 @@ a:hover {
   transition: 0.4s ease-in;
 }
 
+.navbar-dark .navbar-toggler-icon {
+  background-image: url(../dist/image/nav-icon.svg);
+}
+
+.navbar-dark .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+
 @media screen and (max-width: 1199px) {
   .hero .hero-text .hero-text-content {
     padding-left: 10%;
@@ -1319,17 +1379,18 @@ body {
 }
 
 .navbar-nav .active {
-  background: white;
+  background: #cae63f;
+  color: #363839 !important;
 }
 
 ::-moz-selection {
-  color: #cae63f;
-  background: #1b75b9;
+  color: #363839;
+  background: #cae63f;
 }
 
 ::selection {
-  color: #cae63f;
-  background: #1b75b9;
+  color: #363839;
+  background: #cae63f;
 }
 
 .light {
@@ -1352,6 +1413,6 @@ body {
 }
 
 .whatsapp-icon a i {
-  color: #0e3d60;
+  color: #25d366;
 }
 /*# sourceMappingURL=style.css.map */
