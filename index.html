@@ -105,9 +105,7 @@
 								class="nav-link button"
 								id="button"
 								href="#"
-								data-toggle="modal"
-								data-target=".bd-example-modal-lg"
-								>Book now <i class="fas fa-long-arrow-alt-right"></i></a
+								><i class="fas fa-arrow-right ml-2"></i> Book now </a
 							>
 						</li>
 					</ul>
@@ -358,16 +356,125 @@
 			<section id="home" class="hero">
 				<div class="container-lg">
 					<div class="row  ">
-
-						<div class="col-md-8 offset-md-2">
-							<div class="hero-text">
-								<div class="heading">
-									<h1>Book Professional Cleaning And Handyman Services, On-Demand!</h1>
+						<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-0">
+							<div class="hero-text ">
+								<div class="heading-copy text-uppercase ">
+									<h1><i class="fas fa-check ml-2"></i> No <span class="highlight">Hidden</span>  cost</h1>
+									<h1><i class="fas fa-check ml-2"></i> <span class="highlight">same day</span>  certificate</h1>
+									<h1><i class="fas fa-check ml-2"></i> appoinments available within <span class="highlight">24 hrs </span> </h1>
 								</div>
+								<div class="images">
+									<div class="row">
+										<div class=" col-6 col-sm-4 col-md-2">
+											<img src="./dist/image/niceic.jpeg" class="img-fluid" alt="stamps">
+										</div>
+										<div class="col-6 col-sm-4 col-md-2">
+											<img src="./dist/image/napit.jpg" class="img-fluid" alt="stamps">
+										</div>
+										<div class="col-6 col-sm-4 col-md-2">
+											<img src="./dist/image/city-guide.jpg" class="img-fluid" alt="stamps">
+										</div>
+										<div class="col-6 col-sm-4 col-md-2">
+											<img src="./dist/image/partP.png" class="img-fluid" alt="stamps">
+										</div>
+										<div class="col-6 col-sm-4 col-md-2">
+											<img src="./dist/image/epc.jpg" class="img-fluid" alt="stamps">
+										</div>
+										<div class="col-6 col-sm-4 col-md-2">
+											<img src="./dist/image/Gas_Safe.png" class="img-fluid" alt="stamps">
+										</div>
+									</div>
+								</div>
+								<!-- <div class="heading-sub">
+									<h3> Our Engineers are highly "<span class="highlight">qualified, experienced and insured</span>"  </h3>
+								</div> -->
 								<div class="hero-button">
-									<button type="button" class="btn button"  data-toggle="modal" data-target=".bd-example-modal-lg">Book now <i class="fas fa-long-arrow-alt-right ml-2"></i></button>
-									<a  class="btn button button-second ml-5" href="#options"  >how it works</a>
+									<button type="button" class="btn button text-uppercase" ><i class="fas fa-arrow-right ml-2 "></i> Book now</button>
+									
 								</div>
+							</div>
+						</div>
+						<div class="col-sm-10 offset-sm-1 col-md-4 offset-md-0">
+							<div class="hero-form-content text-capitalize">
+								<div class="heading">
+									<h1 class="text-uppercase" >Quick Enquiry</h1>
+								</div>
+								<form action="./dist/php/contact.php" method="POST">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<select class="form-control" id="exampleFormControlSelect1">
+													<option>-select service-</option>
+													<option>Electrical Certificate (EICR) - Residential</option>
+													<option>Electrical Certificate (EICR) - commercial</option>
+													<option>Gas Safety Certificate - CP12</option>
+													<option>Gas safety certificate + boiler service</option>
+													<option>EPC (Residential)</option>
+													<option>EPC (Commercial)</option>
+													<option>PAT Testing Residential</option>
+													<option>PAT Testing Commercial</option>
+													<option>Fire Alarm Certificate - Residential</option>
+													<option>Emergency Lighting Certificate - Residential</option>
+													<option>Fire Risk Report</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder=" Name: "
+													name="name"
+													required
+												/>
+											</div>
+										</div>
+										
+										<div class="col-md-12">
+											<div class="form-group">
+												<input
+													type="email"
+													class="form-control"
+													id="exampleInputEmail1"
+													placeholder="Email: "
+													aria-describedby="emailHelp"
+													name="email"
+													required
+												/>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Phone: "
+													name="phone"
+													required
+												/>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Postcode : "
+													name="postcode"
+													required
+												/>
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+
+
+									<button type="submit" class="btn button">Submit <i class="fas fa-paper-plane ml-2"></i></button>
+								</form>
 							</div>
 						</div>
 					</div>

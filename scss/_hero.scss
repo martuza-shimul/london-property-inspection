@@ -1,55 +1,90 @@
 .hero {
-	height: 80vh;
-	// background:
-	// url("../img/214181.png") no-repeat bottom, url(../img/overaly.png) repeat;
-	background: url("../dist/img/main-hero.jpg") no-repeat bottom center;
+	min-height: 70vh;
+	// background: url("../dist/img/main-hero.jpg") no-repeat center;
+	background-color: $white;
 	background-size: cover;
 	background-attachment: fixed;
 	background-blend-mode: multiply;
-	padding: 15vh 0;
-	// background-color: $primary-color;
+	padding: 5vh 0;
 	position: relative;
 	text-align: center;
 	color: $text-color;
 
 	.hero-text {
-		padding: 5vh 0;
-		background: rgba($text-color, 0.65);
+		padding: 1rem;
+		// background: rgba($text-color, 0.65);
+		.heading-copy {
+			text-align: left;
+			@media (max-width: 767px) {
+				text-align: center;
+			}
+			h1 {
+				color: $primary-color;
+				font-size: 1.6rem;
+				line-height: 2.6rem;
+				font-weight: 900;
+				letter-spacing: 1px;
+				i {
+					color: $secondary-color;
+				}
+			}
+			.highlight {
+				color: $secondary-color;
+			}
+		}
 
-		// height: 100%;
-		// clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 30% 100%, 10% 50%);
-		// clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 35% 95%);
+		.images {
+			text-align: center;
+			@media (min-width: 768px) {
+				margin: 1.5rem auto;
+			}
+			img {
+				max-height: 60px;
+				margin: 1rem auto;
+			}
+		}
+		.heading-sub {
+			text-align: left;
+			text-transform: capitalize;
+			color: $text-color;
+			font-weight: 500;
+			letter-spacing: 0;
+			font-size: 1.3rem;
+			line-height: 1.4;
+			.highlight {
+				color: $primary-color;
+			}
+		}
 
+		.hero-button {
+			padding: 2vh 0;
+			text-align: left;
+			@media (max-width: 767px) {
+				text-align: center;
+			}
+		}
+	}
+	.hero-form-content {
+		padding: 0 0rem 1rem;
+		background: $secondary-color;
 		.heading {
+			background: $primary-color;
+			clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
 			h1 {
 				color: $white;
-				font-size: 2rem;
-				line-height: 3.1rem;
-				font-weight: 700;
-				text-transform: capitalize;
-				letter-spacing: 2px;
-				// font-family: "Montserrat", sans-serif;
-				font-family: "Roboto", sans-serif;
+				padding: 1rem 0;
 			}
 		}
-		.sub-heading {
-			margin-left: 15%;
-			color: $text-rev;
-			padding: 1vh 0;
-			h5 {
-				font-size: 1.1rem;
-				line-height: 1.8rem;
-				font-weight: 500;
-				letter-spacing: 1px;
-				// font-family: "Josefin Sans", sans-serif;
-				// font-family: "Montserrat", sans-serif;
-				// font-family: "Montserrat", sans-serif;
-				font-family: "Roboto", sans-serif;
-			}
+
+		form {
+			padding: 1rem;
 		}
-		.hero-button {
-			// margin-top: 5rem;
-			padding: 2vh;
+		.button {
+			text-transform: uppercase;
+			&:hover {
+				background-color: $white;
+				color: $primary-color;
+			}
 		}
 	}
 
