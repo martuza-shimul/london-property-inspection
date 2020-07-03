@@ -1,5 +1,8 @@
 .heading {
 	padding: 0 0 30px 0;
+	img {
+		max-height: 2rem;
+	}
 	h1 {
 		font-size: 2rem;
 		line-height: 3.1rem;
@@ -48,29 +51,31 @@ button:focus {
 }
 .wb-button {
 	border: none;
-	background: transparent;
-	font-size: 1.18rem;
-	line-height: 2rem;
-	color: $primary-color;
+	background: $text-rev;
+	font-size: 0.8rem;
+	color: $text-color;
 	text-transform: capitalize;
-	letter-spacing: 2px;
-	font-weight: 500;
+	font-weight: 600;
+	padding: 0.7rem 1rem;
+	@media (min-width: 576px) and (max-width: 605px) {
+		font-size: 0.7rem;
+	}
+	@media (max-width: 305px) {
+		font-size: 0.5rem;
+		padding: 0.5rem 0.4rem;
+	}
+
+	&.secondary {
+		background: $secondary-color;
+		color: $text-color;
+	}
 
 	i {
-		color: $secondary-color;
-		margin-left: 0.5rem;
+		margin-right: 0.2rem;
 	}
 	&:hover {
 		text-decoration: none;
-		color: $secondary-color;
-
 		transition: 0.3s ease-in;
-
-		i {
-			color: $primary-color;
-			transform: translateX(25px);
-			transition: 0.2s ease-in;
-		}
 	}
 }
 .hide {

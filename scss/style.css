@@ -3,6 +3,10 @@
   padding: 0 0 30px 0;
 }
 
+.heading img {
+  max-height: 2rem;
+}
+
 .heading h1 {
   font-size: 2rem;
   line-height: 3.1rem;
@@ -54,33 +58,40 @@ button:focus {
 
 .wb-button {
   border: none;
-  background: transparent;
-  font-size: 1.18rem;
-  line-height: 2rem;
-  color: #1b75b9;
+  background: #f2f2f2;
+  font-size: 0.8rem;
+  color: #363839;
   text-transform: capitalize;
-  letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+}
+
+@media (min-width: 576px) and (max-width: 605px) {
+  .wb-button {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 305px) {
+  .wb-button {
+    font-size: 0.5rem;
+    padding: 0.5rem 0.4rem;
+  }
+}
+
+.wb-button.secondary {
+  background: #cae63f;
+  color: #363839;
 }
 
 .wb-button i {
-  color: #cae63f;
-  margin-left: 0.5rem;
+  margin-right: 0.2rem;
 }
 
 .wb-button:hover {
   text-decoration: none;
-  color: #cae63f;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
-}
-
-.wb-button:hover i {
-  color: #1b75b9;
-  -webkit-transform: translateX(25px);
-          transform: translateX(25px);
-  -webkit-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
 }
 
 .hide {
@@ -417,31 +428,41 @@ a:hover {
   width: 100%;
 }
 
-.card-holder .ch-content-holder, .card-holder .ch-footer {
-  margin: 1rem;
-  padding: 1rem 0;
+.card-holder .ch-footer {
+  padding: 0.8rem 0 1.5rem 0;
 }
 
-.card-holder .ch-content-holder {
-  border-bottom: 2px solid #f2f2f2;
+.card-holder .ch-content-holder .sub-heading {
+  color: #363839;
+  background: #f2f2f2;
+  padding-bottom: 0;
 }
 
 .card-holder .ch-content-holder .sub-heading h5 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #cae63f;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+  padding: 0.6rem 0;
 }
 
-.card-holder .ch-content-holder .sub-heading .price h5 {
-  font-size: 1.18rem;
-  font-weight: 500;
-  color: #363839;
-  font-family: "Josefin Sans", sans-serif;
+.card-holder .ch-content-holder .price {
+  margin-top: 0.8rem;
+  color: #fff;
+  background: #1b75b9;
+}
+
+.card-holder .ch-content-holder .price h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  letter-spacing: 1px;
 }
 
 .card-holder .ch-content-holder .star {
-  color: #1b75b9;
+  color: #cae63f;
+  padding-top: 0.8rem;
 }
 
 .card-holder:hover {
