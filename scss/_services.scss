@@ -3,9 +3,10 @@
 }
 
 .card-holder {
-	background: rgba($white, 0.7);
+	background: darken($white, 2);
 	margin: 1.5rem 0;
-	box-shadow: rgba($text-color, 0.2) 0px 5px 5px -5px;
+	height: 100%;
+	box-shadow: rgba($text-color, 0.7) 0px 5px 10px 0px;
 	.ch-image-holder {
 		.img-fluid {
 			width: 100%;
@@ -18,7 +19,7 @@
 	.ch-content-holder {
 		.sub-heading {
 			color: $text-color;
-			background: $text-rev;
+			background: darken($white, 8);
 			padding-bottom: 0;
 			h5 {
 				font-size: 1rem;
