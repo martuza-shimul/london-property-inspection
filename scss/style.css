@@ -173,7 +173,7 @@ a:hover {
 
 .navbar {
   color: #1b75b9;
-  text-transform: capitalize;
+  text-transform: uppercase;
   background-color: #f2f2f2;
   height: 85px;
   width: 100%;
@@ -188,7 +188,7 @@ a:hover {
 }
 
 .navbar .navbar-nav .nav-item {
-  padding: 0rem 0.2rem;
+  padding: 0rem 0.5rem;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -203,6 +203,23 @@ a:hover {
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
   background: #cae63f;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu {
+  background: #1b75b9;
+  border: 0;
+  border-radius: 0;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background: #cae63f;
+  color: #1b75b9;
 }
 
 .navbar .navbar-nav .nav-item .button {
