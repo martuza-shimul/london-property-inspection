@@ -367,7 +367,7 @@ a:hover {
 }
 
 .hero .hero-text .heading-copy h1 {
-  color: #1b75b9;
+  color: #363839;
   font-size: 1.6rem;
   line-height: 2.6rem;
   font-weight: 900;
@@ -375,11 +375,11 @@ a:hover {
 }
 
 .hero .hero-text .heading-copy h1 i {
-  color: #cae63f;
+  color: #1b75b9;
 }
 
 .hero .hero-text .heading-copy .highlight {
-  color: #cae63f;
+  color: #1b75b9;
 }
 
 .hero .hero-text .images {

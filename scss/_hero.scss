@@ -19,17 +19,17 @@
 				text-align: center;
 			}
 			h1 {
-				color: $primary-color;
+				color: $text-color;
 				font-size: 1.6rem;
 				line-height: 2.6rem;
 				font-weight: 900;
 				letter-spacing: 1px;
 				i {
-					color: $secondary-color;
+					color: $primary-color;
 				}
 			}
 			.highlight {
-				color: $secondary-color;
+				color: $primary-color;
 			}
 		}
 
