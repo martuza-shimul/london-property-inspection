@@ -64,29 +64,6 @@
 			}
 		}
 	}
-	.hero-form-content {
-		padding: 0 0rem 1rem;
-		background: $secondary-color;
-		.heading {
-			background: $primary-color;
-			clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
-			h1 {
-				color: $white;
-				padding: 1rem 0;
-			}
-		}
-
-		form {
-			padding: 1rem;
-		}
-		.button {
-			text-transform: uppercase;
-			&:hover {
-				background-color: $white;
-				color: $primary-color;
-			}
-		}
-	}
 
 	// &::after {
 	// 	content: "";
@@ -134,5 +111,29 @@
 	}
 	h3 {
 		font-weight: 500;
+	}
+}
+
+.hero-form-content {
+	padding: 0 0rem 1rem;
+	background: $secondary-color;
+	.heading {
+		background: $primary-color;
+		clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
+		h1 {
+			color: $white;
+			padding: 1rem 0;
+		}
+	}
+
+	form {
+		padding: 1rem;
+	}
+	.button {
+		text-transform: uppercase;
+		&:hover {
+			background-color: $white;
+			color: $primary-color;
+		}
 	}
 }

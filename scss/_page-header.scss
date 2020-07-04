@@ -1,25 +1,23 @@
 .page-header {
-	height: 60vh;
-	padding: 15vh 0;
-	background: 
-		url("../img/21481.png") no-repeat bottom right;
-
+	min-height: 30vh;
+	padding: 6vh 0;
 	background-size: cover;
-	// background-position: 300px -100px;
-	// background-attachment: fixed;
-	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-color: $text-color;
+	background-blend-mode: soft-light;
 	.ph-text {
 		.ph-title {
 			text-transform: capitalize;
-
 			padding: 5vh 0;
-
-			color: $white;
+			color: $text-color;
 			h1 {
 				// background: rgba($primary-color, 0.6);
 				font-weight: 900;
-				font-size: 2.3rem;
-				font-family: "Josefin Sans", sans-serif;
+				font-size: 1.8rem;
+				letter-spacing: 2px;
+				line-height: 2.3rem;
+				// font-family: "Josefin Sans", sans-serif;
 				background: rgba($secondary-color, 0.8);
 				display: inline-block;
 				padding: 2rem;

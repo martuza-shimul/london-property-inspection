@@ -1,4 +1,3 @@
-
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -12,15 +11,15 @@
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 			crossorigin="anonymous"
 		/>
-		
+
 		<!-- custom css -->
 		<link rel="stylesheet" href="./scss/style.css" />
 
-		<title>London Property inspection </title>
+		<title>London Property inspection</title>
 
-				<!-- Favicons
+		<!-- Favicons
 			================================================== -->
-			<!-- <link rel="icon" href="./dist/img/favicon.png" type="image/x-icon" />
+		<!-- <link rel="icon" href="./dist/img/favicon.png" type="image/x-icon" />
 			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./dist/img/favicon.png" />
 			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./dist/img/favicon.png" />
 			<link rel="apple-touch-icon-precomposed" href="./dist/img/favicon.png" /> -->
@@ -28,9 +27,11 @@
 	<body>
 		<div class="wrapper">
 			<section class="whatsapp-icon">
-				<a href="https://wa.me/447957573632"><i class="fab fa-whatsapp-square fa-3x"></i></a>
+				<a href="https://wa.me/447957573632"
+					><i class="fab fa-whatsapp-square fa-3x"></i
+				></a>
 			</section>
-			<section class="top-header ">
+			<section class="top-header">
 				<div class="container-md">
 					<div class="row d-flex align-items-center">
 						<div class="col-md-4">
@@ -40,13 +41,20 @@
 						</div>
 						<div class="col-md-4">
 							<div class="slogan text-center">
-								<p >We make a customer, not a sale!</p>
+								<p>We make a customer, not a sale!</p>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="quick-contact text-right">
-								<p class="center-align phone"><img src="./dist/img/call-white.png" alt="Contact">  <a class="" href="tel:020 8088 3646">020 8088 3646</a></p>
-								<p><a class="" href="mailto:info@domain.co.uk">info@domain.co.uk</a></p>
+								<p class="center-align phone">
+									<img src="./dist/img/call-white.png" alt="Contact" />
+									<a class="" href="tel:020 8088 3646">020 8088 3646</a>
+								</p>
+								<p>
+									<a class="" href="mailto:info@domain.co.uk"
+										>info@domain.co.uk</a
+									>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -75,15 +83,19 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<a  class="nav-link" href="#home"
-								>Home </a
-							>
+							<a class="nav-link" href="#home">Home </a>
 						</li>
-						<!-- <li class="nav-item">
-							<a class="nav-link scroll" href="#services">Services</a>
-						</li> -->
+
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
 								Services
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -94,294 +106,83 @@
 								<a class="dropdown-item" href="#">pat certificate</a>
 								<a class="dropdown-item" href="#">fire risk assessment</a>
 								<a class="dropdown-item" href="#">epc</a>
-								
+							</div>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link scroll" href="#contact">contact us</a>
 						</li>
-						
+
 						<li class="nav-item">
-							<a
-								class="nav-link button"
-								id="button"
-								href="#"
-								><i class="fas fa-arrow-right ml-2"></i> Book now </a
-							>
+							<a class="nav-link button" id="button" href="#"
+								><i class="fas fa-arrow-right ml-2"></i> Book now
+							</a>
 						</li>
 					</ul>
 				</div>
 			</nav>
-			<section class="modal-wrapper">
-				<div class="container-lg">
-					<!-- Modal -->
-					<div class="modal fade bd-example-modal-lg " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog modal-lg" role="document">
-							<div class="modal-content">
-								<!-- <div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-								</div> -->
-								<div class="modal-body">
-									<div class="quote-engine-wrapper d-flex justify-content-center">
-										<form enctype="multipart/form-data" action="./dist/php/data.php" method="POST">
-											<div class="first">
-												<h5 class="center-align">Book a service for?</h5>
-												<p>
-													<label>
-														<input  class="with-gap" name="first" value="home" type="radio"  />
-														<span>Home</span>
-														
-													</label>
-												</p>
-											
-												<p>
-													<label>
-														<input  class="with-gap" name="first" type="radio" value="office"  />
-														<span>Office</span>
-														
-													</label>
-												</p>
-												<button onclick="handleRadioClick()"  type="button" class="btn button">Continue <i class="fas fa-long-arrow-alt-right"></i></button>
-											</div>
 
-											<div class="second hide">
-												<h5 class="center-align">Which service you want to Book?</h5>
-												<p>
-													<label>
-														<input  class="with-gap" name="second" value="Cleaning Service" type="radio"  />
-														<span>Cleaning Service</span>
-													</label>
-												</p>
-												<p>
-													<label>
-														<input  class="with-gap" name="second" value="Handyman Service" type="radio"  />
-														<span>Handyman Service</span>
-													</label>
-												</p>
-												<p>
-													<label>
-														<input  class="with-gap" name="second" value="Appliances Repair" type="radio"  />
-														<span>Appliances Repair</span>
-													</label>
-												</p>
-												<p>
-													<label>
-														<input  class="with-gap" name="second" value="Pack & Shift" type="radio"  />
-														<span>Pack & Shift</span>
-													</label>
-												</p>
-												<p>
-													<label>
-														<input  class="with-gap" name="second" value="Painting" type="radio"  />
-														<span>Painting</span>
-													</label>
-												</p>
-												<p>
-													<label>
-														<input  class="with-gap" name="second" value="Furniture assembly" type="radio"  />
-														<span>Furniture assembly</span>
-													</label>
-												</p>
-												
-												
-												<button onclick="handleSecond()"  type="button" class="btn button">Continue <i class="fas fa-long-arrow-alt-right"></i></button>
-											</div>
-											
-											<div class="third hide">
-												<h5 class="center-align">When do you want this service?</h5>
-												<p>
-													<label>
-														<input  class="with-gap" name="third" type="radio" value="As soon as possible" />
-														<span>As soon as possible</span>
-													</label>
-												</p>
-												
-												<p>
-													<label>
-														<input  class="with-gap" name="third" type="radio" value="Within Today"  />
-														<span>Within Today</span>
-													</label>
-												</p>
-												<p>
-													<label>
-														<input  class="with-gap" name="third" type="radio" value="Within Tomorrow"  />
-														<span>Within Tomorrow</span>
-													</label>
-												</p>
-												<p>
-													<label>
-														<input  class="with-gap" name="third" type="radio" value="Within this Week"  />
-														<span>Within this Week</span>
-													</label>
-												</p>
-												<p>
-													<label>
-														<input  class="with-gap" name="third" type="radio" value="I don't have a specific date in mind"  />
-														<span>I don't have a specific date in mind</span>
-													</label>
-												</p>  
-												<button onclick="handleThird()"  type="button" class="btn button">Continue <i class="fas fa-long-arrow-alt-right"></i></button>
-											</div>
-											<div class="fourth hide">
-												<h5 class="center-align">Who will provide the materials?</h5>
-												<p>
-													<label>
-														<input  class="with-gap" name="fourth" type="radio" value="I'll provide the materials" />
-														<span>I'll provide the materials</span>
-													</label>
-												</p>
-												<p>
-													<label>
-														<input  class="with-gap" name="fourth" type="radio" value="You have to provide the materials"  />
-														<span>You have to provide the materials</span>
-													</label>
-												</p>
-												<p>
-													<label>
-														<input  class="with-gap" name="fourth" type="radio" value="I want to talk to the expert about this" />
-														<span>I want to talk to the expert about this</span>
-													</label>
-												</p>
-												
-												<button onclick="handleFourth()"  type="button" class="btn button">Continue <i class="fas fa-long-arrow-alt-right"></i></button>
-											</div>
-											<div class="last hide">
-													<h5>Fill up the form to complete this request</h5>
-												<div class="row">
-													
-													<div class="col-md-6">
-														<div class="form-group">
-															<input
-																type="text"
-																class="form-control"
-																placeholder="Name: "
-																name="first-name"
-																required
-															/>
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="form-group">
-															<input
-																type="text"
-																class="form-control"
-																placeholder="Postcode : "
-																name="postcode"
-															/>
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="form-group">
-															<input
-																type="email"
-																class="form-control"
-																id="exampleInputEmail1"
-																placeholder="Email: "
-																aria-describedby="emailHelp"
-																name="email"
-																required
-															/>
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="form-group">
-															<input
-																type="text"
-																class="form-control"
-																placeholder="Phone: "
-																name="phone"
-																required
-															/>
-														</div>
-													</div>
-													
-													<!-- <div class="col-md-6">
-														<div class="form-group">
-															<input
-																type="text"
-																class="form-control"
-																placeholder="Vehicle Pick-up Postcode"
-																name="pick_post"
-																required
-															/>
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="form-group">
-															<input
-																type="text"
-																class="form-control"
-																placeholder="Vehicle Drop off Postcode"
-																name="drop_post"
-																required
-															/>
-														</div>
-													</div> -->
-													<div class="col-md-12">
-															<div class="form-group">
-																	<textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Extra notes" rows="3" required></textarea>
-																</div>
-													</div>
-													<div class="col-md-6">
-														<div class="form-group">
-															<label for="file">Upload Image or Video (optional):
-																<!-- <input id="file" type="file" name="uploaded_file"></input> -->
-															</label>
-															
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="form-group">
-															<input id="file" type="file" name="uploaded_file"></input>
-														</div>
-													</div>
-													
-												</div>
-												<button class="btn button">Submit <i class="fas fa-paper-plane ml-2"></i></button>
-											</div>   
-										</form>
-									</div>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn button" data-dismiss="modal">X</button>
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 			<section id="home" class="hero">
 				<div class="container-lg">
-					<div class="row  ">
+					<div class="row">
 						<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-0">
-							<div class="hero-text ">
-								<div class="heading-copy text-uppercase ">
-									<h1><i class="fas fa-check ml-2"></i> No <span class="highlight">Hidden</span>  cost</h1>
-									<h1><i class="fas fa-check ml-2"></i> <span class="highlight">same day</span>  certificate</h1>
-									<h1><i class="fas fa-check ml-2"></i> appoinments available within <span class="highlight">24 hrs </span> </h1>
+							<div class="hero-text">
+								<div class="heading-copy text-uppercase">
+									<h1>
+										<i class="fas fa-check ml-2"></i> No
+										<span class="highlight">Hidden</span> cost
+									</h1>
+									<h1>
+										<i class="fas fa-check ml-2"></i>
+										<span class="highlight">same day</span> certificate
+									</h1>
+									<h1>
+										<i class="fas fa-check ml-2"></i> appoinments available
+										within <span class="highlight">24 hrs </span>
+									</h1>
 								</div>
 								<div class="images">
 									<div class="row">
-										<div class=" col-6 col-sm-4 col-md-2">
-											<img src="./dist/image/niceic.jpeg" class="img-fluid" alt="stamps">
+										<div class="col-6 col-sm-4 col-md-2">
+											<img
+												src="./dist/image/niceic.jpeg"
+												class="img-fluid"
+												alt="stamps"
+											/>
 										</div>
 										<div class="col-6 col-sm-4 col-md-2">
-											<img src="./dist/image/napit.jpg" class="img-fluid" alt="stamps">
+											<img
+												src="./dist/image/napit.jpg"
+												class="img-fluid"
+												alt="stamps"
+											/>
 										</div>
 										<div class="col-6 col-sm-4 col-md-2">
-											<img src="./dist/image/city-guide.jpg" class="img-fluid" alt="stamps">
+											<img
+												src="./dist/image/city-guide.jpg"
+												class="img-fluid"
+												alt="stamps"
+											/>
 										</div>
 										<div class="col-6 col-sm-4 col-md-2">
-											<img src="./dist/image/partP.png" class="img-fluid" alt="stamps">
+											<img
+												src="./dist/image/partP.png"
+												class="img-fluid"
+												alt="stamps"
+											/>
 										</div>
 										<div class="col-6 col-sm-4 col-md-2">
-											<img src="./dist/image/epc.jpg" class="img-fluid" alt="stamps">
+											<img
+												src="./dist/image/epc.jpg"
+												class="img-fluid"
+												alt="stamps"
+											/>
 										</div>
 										<div class="col-6 col-sm-4 col-md-2">
-											<img src="./dist/image/Gas_Safe.png" class="img-fluid" alt="stamps">
+											<img
+												src="./dist/image/Gas_Safe.png"
+												class="img-fluid"
+												alt="stamps"
+											/>
 										</div>
 									</div>
 								</div>
@@ -389,32 +190,45 @@
 									<h3> Our Engineers are highly "<span class="highlight">qualified, experienced and insured</span>"  </h3>
 								</div> -->
 								<div class="hero-button">
-									<button type="button" class="btn button text-uppercase" ><i class="fas fa-arrow-right ml-2 "></i> Book now</button>
-									
+									<button type="button" class="btn button text-uppercase">
+										<i class="fas fa-arrow-right ml-2"></i> Book now
+									</button>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-10 offset-sm-1 col-md-4 offset-md-0">
 							<div class="hero-form-content text-capitalize">
 								<div class="heading">
-									<h1 class="text-uppercase" >Quick Enquiry</h1>
+									<h1 class="text-uppercase">Quick Enquiry</h1>
 								</div>
 								<form action="./dist/php/contact.php" method="POST">
 									<div class="row">
 										<div class="col-md-12">
 											<div class="form-group">
-												<select class="form-control" id="exampleFormControlSelect1">
+												<select
+													class="form-control"
+													id="exampleFormControlSelect1"
+												>
 													<option>-select service-</option>
-													<option>Electrical Certificate (EICR) - Residential</option>
-													<option>Electrical Certificate (EICR) - commercial</option>
+													<option
+														>Electrical Certificate (EICR) - Residential</option
+													>
+													<option
+														>Electrical Certificate (EICR) - commercial</option
+													>
 													<option>Gas Safety Certificate - CP12</option>
-													<option>Gas safety certificate + boiler service</option>
+													<option
+														>Gas safety certificate + boiler service</option
+													>
 													<option>EPC (Residential)</option>
 													<option>EPC (Commercial)</option>
 													<option>PAT Testing Residential</option>
 													<option>PAT Testing Commercial</option>
 													<option>Fire Alarm Certificate - Residential</option>
-													<option>Emergency Lighting Certificate - Residential</option>
+													<option
+														>Emergency Lighting Certificate -
+														Residential</option
+													>
 													<option>Fire Risk Report</option>
 												</select>
 											</div>
@@ -430,7 +244,7 @@
 												/>
 											</div>
 										</div>
-										
+
 										<div class="col-md-12">
 											<div class="form-group">
 												<input
@@ -466,14 +280,11 @@
 												/>
 											</div>
 										</div>
-										
-										
-										
-										
 									</div>
 
-
-									<button type="submit" class="btn button">Submit <i class="fas fa-paper-plane ml-2"></i></button>
+									<button type="submit" class="btn button">
+										Submit <i class="fas fa-paper-plane ml-2"></i>
+									</button>
 								</form>
 							</div>
 						</div>
@@ -483,13 +294,17 @@
 			<section class="services" id="services">
 				<div class="container-lg">
 					<div class="heading">
-						<h1> <img src="./dist/image/surface1.png" alt="icon"> services</h1>
+						<h1><img src="./dist/image/surface1.png" alt="icon" /> services</h1>
 					</div>
 					<div class="row equal">
-						<div class="col-sm-6 col-lg-4 ">
+						<div class="col-sm-6 col-lg-4">
 							<div class="card-holder">
 								<div class="ch-image-holder">
-									<img src="./dist/image/electrial-wire.jpg" alt="image" class="img-fluid">
+									<img
+										src="./dist/image/electrial-wire.jpg"
+										alt="image"
+										class="img-fluid"
+									/>
 								</div>
 								<div class="ch-content-holder text-center">
 									<div class="sub-heading">
@@ -503,32 +318,31 @@
 										<i class="fas fa-star"></i>
 									</div>
 									<div class="price">
-											<h5>Price: from £99</h5>
+										<h5>Price: from £99</h5>
 									</div>
-									
 								</div>
 								<div class="ch-footer">
 									<div class="row">
 										<div class="col text-left">
-												<a
-												class="wb-button secondary text-uppercase"
-												href="#"
-												> <i class="fas fa-arrow-right"></i> Book now</a>
+											<a class="wb-button secondary text-uppercase" href="#">
+												<i class="fas fa-arrow-right"></i> Book now</a
+											>
 										</div>
 										<div class="col text-right">
-												<a
-												class="wb-button text-uppercase"
-												href="#"
-												>Details</a>
+											<a class="wb-button text-uppercase" href="#">Details</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-4 ">
+						<div class="col-sm-6 col-lg-4">
 							<div class="card-holder">
 								<div class="ch-image-holder">
-									<img src="./dist/image/gas-safety.jpg" alt="image" class="img-fluid">
+									<img
+										src="./dist/image/gas-safety.jpg"
+										alt="image"
+										class="img-fluid"
+									/>
 								</div>
 								<div class="ch-content-holder text-center">
 									<div class="sub-heading">
@@ -542,32 +356,31 @@
 										<i class="fas fa-star"></i>
 									</div>
 									<div class="price">
-											<h5>Price: from £59</h5>
+										<h5>Price: from £59</h5>
 									</div>
-									
 								</div>
 								<div class="ch-footer">
 									<div class="row">
 										<div class="col text-left">
-												<a
-												class="wb-button secondary text-uppercase"
-												href="#"
-												> <i class="fas fa-arrow-right"></i> Book now</a>
+											<a class="wb-button secondary text-uppercase" href="#">
+												<i class="fas fa-arrow-right"></i> Book now</a
+											>
 										</div>
 										<div class="col text-right">
-												<a
-												class="wb-button text-uppercase"
-												href="#"
-												>Details</a>
+											<a class="wb-button text-uppercase" href="#">Details</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-4 ">
+						<div class="col-sm-6 col-lg-4">
 							<div class="card-holder">
 								<div class="ch-image-holder">
-									<img src="./dist/image/epc-image.jpg" alt="image" class="img-fluid">
+									<img
+										src="./dist/image/epc-image.jpg"
+										alt="image"
+										class="img-fluid"
+									/>
 								</div>
 								<div class="ch-content-holder text-center">
 									<div class="sub-heading">
@@ -581,32 +394,31 @@
 										<i class="fas fa-star"></i>
 									</div>
 									<div class="price">
-											<h5>Price: from £59</h5>
+										<h5>Price: from £59</h5>
 									</div>
-									
 								</div>
 								<div class="ch-footer">
 									<div class="row">
 										<div class="col text-left">
-												<a
-												class="wb-button secondary text-uppercase"
-												href="#"
-												> <i class="fas fa-arrow-right"></i> Book now</a>
+											<a class="wb-button secondary text-uppercase" href="#">
+												<i class="fas fa-arrow-right"></i> Book now</a
+											>
 										</div>
 										<div class="col text-right">
-												<a
-												class="wb-button text-uppercase"
-												href="#"
-												>Details</a>
+											<a class="wb-button text-uppercase" href="#">Details</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-4 ">
+						<div class="col-sm-6 col-lg-4">
 							<div class="card-holder">
 								<div class="ch-image-holder">
-									<img src="./dist/image/pat-testing.jpg" alt="image" class="img-fluid">
+									<img
+										src="./dist/image/pat-testing.jpg"
+										alt="image"
+										class="img-fluid"
+									/>
 								</div>
 								<div class="ch-content-holder text-center">
 									<div class="sub-heading">
@@ -620,32 +432,31 @@
 										<i class="fas fa-star"></i>
 									</div>
 									<div class="price">
-											<h5>Price: from £59</h5>
+										<h5>Price: from £59</h5>
 									</div>
-									
 								</div>
 								<div class="ch-footer">
 									<div class="row">
 										<div class="col text-left">
-												<a
-												class="wb-button secondary text-uppercase"
-												href="#"
-												> <i class="fas fa-arrow-right"></i> Book now</a>
+											<a class="wb-button secondary text-uppercase" href="#">
+												<i class="fas fa-arrow-right"></i> Book now</a
+											>
 										</div>
 										<div class="col text-right">
-												<a
-												class="wb-button text-uppercase"
-												href="#"
-												>Details</a>
+											<a class="wb-button text-uppercase" href="#">Details</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-4 ">
+						<div class="col-sm-6 col-lg-4">
 							<div class="card-holder">
 								<div class="ch-image-holder">
-									<img src="./dist/image/boiler.jpg" alt="image" class="img-fluid">
+									<img
+										src="./dist/image/boiler.jpg"
+										alt="image"
+										class="img-fluid"
+									/>
 								</div>
 								<div class="ch-content-holder text-center">
 									<div class="sub-heading">
@@ -659,32 +470,31 @@
 										<i class="fas fa-star"></i>
 									</div>
 									<div class="price">
-											<h5>Price: from £129</h5>
+										<h5>Price: from £129</h5>
 									</div>
-									
 								</div>
 								<div class="ch-footer">
 									<div class="row">
 										<div class="col text-left">
-												<a
-												class="wb-button secondary text-uppercase"
-												href="#"
-												> <i class="fas fa-arrow-right"></i> Book now</a>
+											<a class="wb-button secondary text-uppercase" href="#">
+												<i class="fas fa-arrow-right"></i> Book now</a
+											>
 										</div>
 										<div class="col text-right">
-												<a
-												class="wb-button text-uppercase"
-												href="#"
-												>Details</a>
+											<a class="wb-button text-uppercase" href="#">Details</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-4 ">
+						<div class="col-sm-6 col-lg-4">
 							<div class="card-holder">
 								<div class="ch-image-holder">
-									<img src="./dist/image/fire-alarm.jpg" alt="image" class="img-fluid">
+									<img
+										src="./dist/image/fire-alarm.jpg"
+										alt="image"
+										class="img-fluid"
+									/>
 								</div>
 								<div class="ch-content-holder text-center">
 									<div class="sub-heading">
@@ -698,36 +508,35 @@
 										<i class="fas fa-star"></i>
 									</div>
 									<div class="price">
-											<h5>Price: from £89</h5>
+										<h5>Price: from £89</h5>
 									</div>
-									
 								</div>
 								<div class="ch-footer">
 									<div class="row">
 										<div class="col text-left">
-												<a
-												class="wb-button secondary text-uppercase"
-												href="#"
-												> <i class="fas fa-arrow-right"></i> Book now</a>
+											<a class="wb-button secondary text-uppercase" href="#">
+												<i class="fas fa-arrow-right"></i> Book now</a
+											>
 										</div>
 										<div class="col text-right">
-												<a
-												class="wb-button text-uppercase"
-												href="#"
-												>Details</a>
+											<a class="wb-button text-uppercase" href="#">Details</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-4 ">
+						<div class="col-sm-6 col-lg-4">
 							<div class="card-holder">
 								<div class="ch-image-holder">
-									<img src="./dist/img/cleaning.jpeg" alt="image" class="img-fluid">
+									<img
+										src="./dist/image/fire-assesment.jpg"
+										alt="image"
+										class="img-fluid"
+									/>
 								</div>
 								<div class="ch-content-holder text-center">
 									<div class="sub-heading">
-										<h5>fire rist assessment</h5>
+										<h5>fire risk assessment</h5>
 									</div>
 									<div class="star text-center">
 										<i class="fas fa-star"></i>
@@ -737,32 +546,31 @@
 										<i class="fas fa-star"></i>
 									</div>
 									<div class="price">
-											<h5>Price: from £149</h5>
+										<h5>Price: from £149</h5>
 									</div>
-									
 								</div>
 								<div class="ch-footer">
 									<div class="row">
 										<div class="col text-left">
-												<a
-												class="wb-button secondary text-uppercase"
-												href="#"
-												> <i class="fas fa-arrow-right"></i> Book now</a>
+											<a class="wb-button secondary text-uppercase" href="#">
+												<i class="fas fa-arrow-right"></i> Book now</a
+											>
 										</div>
 										<div class="col text-right">
-												<a
-												class="wb-button text-uppercase"
-												href="#"
-												>Details</a>
+											<a class="wb-button text-uppercase" href="#">Details</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-4 ">
+						<div class="col-sm-6 col-lg-4">
 							<div class="card-holder">
 								<div class="ch-image-holder">
-									<img src="./dist/image/light.jpg" alt="image" class="img-fluid">
+									<img
+										src="./dist/image/light.jpg"
+										alt="image"
+										class="img-fluid"
+									/>
 								</div>
 								<div class="ch-content-holder text-center">
 									<div class="sub-heading">
@@ -776,117 +584,26 @@
 										<i class="fas fa-star"></i>
 									</div>
 									<div class="price">
-											<h5>Price: from £89</h5>
+										<h5>Price: from £89</h5>
 									</div>
-									
 								</div>
 								<div class="ch-footer">
 									<div class="row">
 										<div class="col text-left">
-												<a
-												class="wb-button secondary text-uppercase"
-												href="#"
-												> <i class="fas fa-arrow-right"></i> Book now</a>
+											<a class="wb-button secondary text-uppercase" href="#">
+												<i class="fas fa-arrow-right"></i> Book now</a
+											>
 										</div>
 										<div class="col text-right">
-												<a
-												class="wb-button text-uppercase"
-												href="#"
-												>Details</a>
+											<a class="wb-button text-uppercase" href="#">Details</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						
-						
 					</div>
 				</div>
 			</section>
-			
-			<!-- <section id="why-us" class="what-we-do scrollspy">
-				<div class="container-md">
-					<div class="row">
-						<div class="col">
-							<div class="heading-content">
-								<div class="heading">
-									<h1>WHY choose handyman london</h1>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-					<div class="wwd-content-wrapper">
-						<div class="row ">
-							<div class="col">
-								<div class="row wwd-content text-center">
-									
-									<div class="col-sm-6 col-md-4">
-										<div class="wwd-content-block">
-											<div class="icon-holder">
-												<img src="./dist/img/online-reservation.png" alt="icon" class="img-fluid">
-											</div>
-											<h5>Online Booking  </h5>
-											<p>Book any service instantly using a secure mobile app and website. Track your booking with real time data feed and tasker location. Rate your tasker and give feedback. </p>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="wwd-content-block">
-											<div class="icon-holder">
-												<img src="./dist/img/secured.png" alt="icon" class="img-fluid">
-											</div>
-											<h5>Easy & Secured </h5>
-											<p>Getting things done with HandyMama is easy. Besides, your data is secured in our cloud system, powered by latest technologies and security tools. </p>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="wwd-content-block">
-											<div class="icon-holder">
-												<img src="./dist/img/varified.png" alt="icon" class="img-fluid">
-											</div>
-											<h5>Verified & Insured Pro  </h5>
-											<p>All HandyMama registered service professionals are thoroughly verified, 4-steps trained and covered safety and health insurance. </p>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="wwd-content-block">
-											<div class="icon-holder">
-												<img src="./dist/img/fast-delivery.png" alt="icon" class="img-fluid">
-											</div>
-											<h5>Fastest Job Delivery </h5>
-											<p>Don’t wait days, weeks. You book a service with HandyMama, you get it done in hours. </p>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="wwd-content-block">
-											<div class="icon-holder">
-												<img src="./dist/img/warranty.png" alt="icon" class="img-fluid">
-											</div>
-											<h5>Service Warranty </h5>
-											<p>All the services are covered under 7 days service warranty. No questions asked.</p>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-4">
-										<div class="wwd-content-block">
-											<div class="icon-holder">
-												<img src="./dist/img/satisfied.png" alt="icon" class="img-fluid">
-											</div>
-											<h5>Satisfaction Guaranteed  </h5>
-											<p>If you are not happy with our service, we do it again and again until you smile. </p>
-										</div>
-									</div>
-
-									
-									
-								</div>
-							</div>
-							
-							
-						</div>
-						
-					</div>
-				</div>
-			</section> -->
 
 			<section class="review" id="review">
 				<div class="container-md">
@@ -894,15 +611,16 @@
 						<div class="col-md-12">
 							<div class="heading-content">
 								<div class="heading">
-									<h1><i class="fas fa-quote-left mr-3 "> </i>customers feedback</h1>
+									<h1>
+										<i class="fas fa-quote-left mr-3"> </i>customers feedback
+									</h1>
 								</div>
-								
 							</div>
 						</div>
 					</div>
 					<div class="review-content-wrapper">
 						<div class="row align-items-center">
-							<div class=" col-md-4 ">
+							<div class="col-md-4">
 								<div class="review-iconbox text-center">
 									<div class="review-icon">
 										<i class="fas fa-user-tie fa-5x"></i>
@@ -916,16 +634,18 @@
 									</div>
 									<div class="reviewer-info">
 										<h6 class="name">John Smith</h6>
-										<p class="company ">- Manager at Netlify</p>
+										<p class="company">- Manager at Netlify</p>
 									</div>
 									<div class="review-text">
-											
-										<p>Just wowww very good service professional helpers. Nice behaviour. Finaly within budget you can get the best service!
+										<p>
+											Just wowww very good service professional helpers. Nice
+											behaviour. Finaly within budget you can get the best
+											service!
 										</p>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 ">
+							<div class="col-md-4">
 								<div class="review-iconbox text-center">
 									<div class="review-icon">
 										<!-- <img src="./dist/img/booking.png" alt="Icon"> -->
@@ -940,15 +660,19 @@
 									</div>
 									<div class="reviewer-info">
 										<h6 class="name">Adam Bakkar</h6>
-										<p class="company ">- CEO at Urban Links</p>
+										<p class="company">- CEO at Urban Links</p>
 									</div>
-									<div class="review-text">	
-										<p> Absolutely professional team of people, always prompt and clear in communication, and most importantly - unlike other electricians/mechanics - their team always showed up in due time and finished their work properly.
+									<div class="review-text">
+										<p>
+											Absolutely professional team of people, always prompt and
+											clear in communication, and most importantly - unlike
+											other electricians/mechanics - their team always showed up
+											in due time and finished their work properly.
 										</p>
 									</div>
 								</div>
 							</div>
-							<div class=" col-md-4 ">
+							<div class="col-md-4">
 								<div class="review-iconbox text-center">
 									<div class="review-icon">
 										<i class="fas fa-user-tie fa-5x"></i>
@@ -962,169 +686,50 @@
 									</div>
 									<div class="reviewer-info">
 										<h6 class="name">John Doe</h6>
-										<p class="company ">- Product Manager at Amazon</p>
+										<p class="company">- Product Manager at Amazon</p>
 									</div>
 									<div class="review-text">
-											
-										<p>Just wowww very good service professional helpers. Nice behaviour. Finaly within budget you can get the best service!
+										<p>
+											Just wowww very good service professional helpers. Nice
+											behaviour. Finaly within budget you can get the best
+											service!
 										</p>
-										
 									</div>
 								</div>
-							</div>	
+							</div>
 						</div>
-						
 					</div>
 				</div>
 			</section>
-		
-			<!-- <section id="contact" class="contact scrollspy" >
-				<div class="container-md">
+
+			<section class="sticky-mobile d-sm-block d-md-none">
+				<div class="container">
 					<div class="row">
 						<div class="col">
-							<div class="heading">
-								<h1 class=" text-uppercase">Contact Us</h1>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-6 col-md-6">
-							<div class="contact-form">
-								<form enctype="multipart/form-data" action="./dist/php/contact.php" method="POST">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="form-group">
-												<input
-													type="text"
-													class="form-control"
-													placeholder=" Name: "
-													name="name"
-													required
-												/>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<input
-													type="text"
-													class="form-control"
-													placeholder="Postcode : "
-													name="postcode"
-													required
-												/>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<input
-													type="email"
-													class="form-control"
-													id="exampleInputEmail1"
-													placeholder="Email: "
-													aria-describedby="emailHelp"
-													name="email"
-													required
-												/>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<input
-													type="text"
-													class="form-control"
-													placeholder="Phone: "
-													name="phone"
-													required
-												/>
-											</div>
-										</div>
-										
-										
-										<div class="col-md-6">
-											<div class="form-group">
-												<input
-													type="text"
-													class="form-control"
-													placeholder="Pick-up Postcode"
-													name="pick-post"
-													required
-												/>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<input
-													type="text"
-													class="form-control"
-													placeholder="Drop off Postcode"
-													name="drop-post"
-													required
-												/>
-											</div>
-										</div>
-										<div class="col-md-12">
-												<div class="form-group">
-														<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3" name="message" required></textarea>
-													</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<label for="file">Upload Image or Video (optional):
-												</label>
-												
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<input id="file" type="file" name="uploaded_file"></input>
-											</div>
-										</div>
-										
-									</div>
-
-
-									<button type="submit" class="btn button">Submit <i class="fas fa-paper-plane ml-2"></i></button>
-								</form>
-							</div>
-						</div>
-						<div class="offset-sm-1 col-sm-5 col-md-5">
-							<div class="contact-box ">
-								<h3 class="">
-									 <small>For a prompt response</small>  <br />
-									contact us now
-								</h3>
-								<p>
-									<img src="./dist/img/call.png" alt="Contact phone number" />
-									<span><a href="tel:020 8088 3646">020 8088 3646 </a></span>
-								</p>
-								<p>
-									<img src="./dist/img/send.png" alt="Contact phone number" />
-									<span>support@handyman-london.co.uk</span>
-								</p>
-								<p class="contact-address">
-									<img src="./dist/img/location.png" alt="Contact phone number" class="img-fluid"/>
-									<span>Kemp House, 160 City Road, London, United Kingdom, EC1V 2NX</span>
-								</p>
-							</div>
+							<p class="center-align">
+								<img src="./dist/img/call-white.png" alt="Contact" />
+								<a class="" href="tel:020 8088 3646">020 8088 3646</a>
+							</p>
 						</div>
 					</div>
 				</div>
-			</section> -->
-			<section class="sticky-mobile d-sm-block d-md-none">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-									<p class="center-align"><img src="./dist/img/call-white.png" alt="Contact">  <a class="" href="tel:020 8088 3646">020 8088 3646</a></p>
-							</div>
-						</div>
-					</div>
-				</section>
+			</section>
 			<section class="footer d-none d-md-block">
 				<div class="container-md text-center">
 					<p>We accept all major credit cards</p>
-					<p><i class="fab fa-3x fa-cc-mastercard"></i> <i class="fab fa-3x fa-cc-visa"></i> <i class="fab fa-3x fa-cc-amex"></i> <i class="fab fa-3x fa-cc-discover"></i> </p>
-					<p class="copy text-center">Copyright © 2020 London Property Inspection. All rights reserved.</p>
-					<p class=" text-center"><a href="./privacy-policy.html">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+					<p>
+						<i class="fab fa-3x fa-cc-mastercard"></i>
+						<i class="fab fa-3x fa-cc-visa"></i>
+						<i class="fab fa-3x fa-cc-amex"></i>
+						<i class="fab fa-3x fa-cc-discover"></i>
+					</p>
+					<p class="copy text-center">
+						Copyright © 2020 London Property Inspection. All rights reserved.
+					</p>
+					<p class="text-center">
+						<a href="./privacy-policy.html">Privacy Policy</a> |
+						<a href="#">Terms & Conditions</a>
+					</p>
 				</div>
 			</section>
 		</div>
@@ -1146,11 +751,16 @@
 			crossorigin="anonymous"
 		></script>
 		<!-- fontawesome cdn -->
-		<script src="https://kit.fontawesome.com/27ad0ca7fa.js" crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/27ad0ca7fa.js"
+			crossorigin="anonymous"
+		></script>
 		<!-- cookies code -->
-		<script type="text/javascript" id="cookieinfo"
-        src="//cookieinfoscript.com/js/cookieinfo.min.js">
-    </script>
+		<script
+			type="text/javascript"
+			id="cookieinfo"
+			src="//cookieinfoscript.com/js/cookieinfo.min.js"
+		></script>
 		<script src="./dist/js/app.js"></script>
 	</body>
 </html>

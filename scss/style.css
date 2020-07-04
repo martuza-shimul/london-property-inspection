@@ -422,35 +422,6 @@ a:hover {
   }
 }
 
-.hero .hero-form-content {
-  padding: 0 0rem 1rem;
-  background: #cae63f;
-}
-
-.hero .hero-form-content .heading {
-  background: #1b75b9;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
-          clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
-}
-
-.hero .hero-form-content .heading h1 {
-  color: #fff;
-  padding: 1rem 0;
-}
-
-.hero .hero-form-content form {
-  padding: 1rem;
-}
-
-.hero .hero-form-content .button {
-  text-transform: uppercase;
-}
-
-.hero .hero-form-content .button:hover {
-  background-color: #fff;
-  color: #1b75b9;
-}
-
 .hero-shapes {
   position: relative;
   margin: 2rem 0;
@@ -494,6 +465,35 @@ a:hover {
 
 .thank-content h3 {
   font-weight: 500;
+}
+
+.hero-form-content {
+  padding: 0 0rem 1rem;
+  background: #cae63f;
+}
+
+.hero-form-content .heading {
+  background: #1b75b9;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.hero-form-content .heading h1 {
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.hero-form-content form {
+  padding: 1rem;
+}
+
+.hero-form-content .button {
+  text-transform: uppercase;
+}
+
+.hero-form-content .button:hover {
+  background-color: #fff;
+  color: #1b75b9;
 }
 
 .services {
@@ -1089,23 +1089,26 @@ a:hover {
 }
 
 .page-header {
-  height: 60vh;
-  padding: 15vh 0;
-  background: url("../img/21481.png") no-repeat bottom right;
+  min-height: 30vh;
+  padding: 6vh 0;
   background-size: cover;
-  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #363839;
+  background-blend-mode: soft-light;
 }
 
 .page-header .ph-text .ph-title {
   text-transform: capitalize;
   padding: 5vh 0;
-  color: #fff;
+  color: #363839;
 }
 
 .page-header .ph-text .ph-title h1 {
   font-weight: 900;
-  font-size: 2.3rem;
-  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  line-height: 2.3rem;
   background: rgba(202, 230, 63, 0.8);
   display: inline-block;
   padding: 2rem;
