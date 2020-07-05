@@ -1155,11 +1155,13 @@ a:hover {
   font-weight: 900;
 }
 
-.content-wrapper {
+.content-wrapper,
+.other-content {
   padding: 5vh 0;
 }
 
-.content-wrapper h3 {
+.content-wrapper h3,
+.other-content h3 {
   font-size: 1.4rem;
   line-height: 2.4rem;
   font-weight: 700;
@@ -1174,7 +1176,7 @@ a:hover {
 }
 
 .other-content {
-  margin-top: 50px;
+  padding-top: 0;
 }
 
 .pricing {
@@ -1210,6 +1212,8 @@ a:hover {
 .pricing .price-table .table tr th:last-child,
 .pricing .price-table .table tr td:last-child {
   text-align: right;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .navbar-dark .navbar-toggler-icon {

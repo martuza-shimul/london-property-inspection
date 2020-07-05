@@ -1,4 +1,5 @@
-.content-wrapper {
+.content-wrapper,
+.other-content {
 	padding: 5vh 0;
 	h3 {
 		font-size: 1.4rem;
@@ -15,7 +16,7 @@
 	color: $text-color;
 }
 .other-content {
-	margin-top: 50px;
+	padding-top: 0;
 }
 .pricing {
 	padding: 3vh 0;
@@ -42,6 +43,8 @@
 					color: $text-color;
 					&:last-child {
 						text-align: right;
+						font-weight: 600;
+						letter-spacing: 2px;
 					}
 				}
 			}
