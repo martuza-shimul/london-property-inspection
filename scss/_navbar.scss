@@ -81,6 +81,7 @@
 				border: 0;
 				&:hover {
 					background: $primary-color;
+					// color: $white!important;
 				}
 			}
 		}
@@ -110,7 +111,7 @@
 
 					&:hover {
 						background: $white;
-						color: $primary-color;
+						color: $primary-color !important;
 					}
 				}
 			}

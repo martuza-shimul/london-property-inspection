@@ -59,6 +59,11 @@
 		.hero-button {
 			padding: 2vh 0;
 			text-align: left;
+			.button {
+				&:hover {
+					color: $text-color;
+				}
+			}
 			@media (max-width: 767px) {
 				text-align: center;
 			}
@@ -136,7 +141,7 @@
 		text-transform: uppercase;
 		&:hover {
 			background-color: $white;
-			color: $primary-color;
+			color: $primary-color !important;
 		}
 	}
 }

@@ -65,7 +65,7 @@ button:focus {
 
 .button:hover {
   background: #cae63f;
-  color: #363839 !important;
+  color: #363839;
   border-color: #cae63f;
   -webkit-box-shadow: rgba(54, 56, 57, 0.5) 0px 10px 10px -10px;
           box-shadow: rgba(54, 56, 57, 0.5) 0px 10px 10px -10px;
@@ -300,7 +300,7 @@ a:hover {
 
 .navbar.scrolled .navbar-nav .nav-item .button:hover {
   background: #fff;
-  color: #1b75b9;
+  color: #1b75b9 !important;
 }
 
 .modal-body {
@@ -428,6 +428,10 @@ a:hover {
   text-align: left;
 }
 
+.hero .hero-text .hero-button .button:hover {
+  color: #363839;
+}
+
 @media (max-width: 767px) {
   .hero .hero-text .hero-button {
     text-align: center;
@@ -511,7 +515,7 @@ a:hover {
 
 .hero-form-content .button:hover {
   background-color: #fff;
-  color: #1b75b9;
+  color: #1b75b9 !important;
 }
 
 .services {
