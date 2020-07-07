@@ -45,7 +45,7 @@ button:focus {
 }
 .button {
 	background: $primary-color;
-	color: $white;
+	color: $white !important;
 	padding: 0.5rem 1rem;
 	font-weight: 700;
 	border: 1.5px solid $primary-color;
@@ -55,7 +55,7 @@ button:focus {
 
 	&:hover {
 		background: $secondary-color;
-		color: $text-color;
+		color: $text-color !important;
 		border-color: $secondary-color;
 		box-shadow: rgba($text-color, 0.5) 0px 10px 10px -10px;
 		// transform: scale(1.01);

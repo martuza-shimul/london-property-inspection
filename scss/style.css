@@ -54,7 +54,7 @@ button:focus {
 
 .button {
   background: #1b75b9;
-  color: #fff;
+  color: #fff !important;
   padding: 0.5rem 1rem;
   font-weight: 700;
   border: 1.5px solid #1b75b9;
@@ -65,7 +65,7 @@ button:focus {
 
 .button:hover {
   background: #cae63f;
-  color: #363839;
+  color: #363839 !important;
   border-color: #cae63f;
   -webkit-box-shadow: rgba(54, 56, 57, 0.5) 0px 10px 10px -10px;
           box-shadow: rgba(54, 56, 57, 0.5) 0px 10px 10px -10px;
