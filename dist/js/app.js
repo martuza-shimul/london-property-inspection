@@ -17,6 +17,61 @@ $(document).ready(function () {
 	});
 });
 
+var service = document.querySelector(".service-item");
+var serviceName;
+var eicrSub = document.querySelector(".eicr-sub");
+var gasSub = document.querySelector(".gas-sub");
+var epcSub = document.querySelector(".epc-sub");
+var patSub = document.querySelector(".pat-sub");
+var patcSub = document.querySelector(".patc-sub");
+
+document.querySelector(".service-item").addEventListener("change", function () {
+	// console.log("You selected: ", this.value);
+	serviceName = this.value.trim();
+	// console.log(serviceName);
+	if (serviceName == "Electrical Certificate (EICR) - Residential") {
+		eicrSub.classList.remove("hide");
+
+		gasSub.classList.add("hide");
+		epcSub.classList.add("hide");
+		patSub.classList.add("hide");
+		patcSub.classList.add("hide");
+	} else if (serviceName == "Gas Safety Certificate - CP12") {
+		gasSub.classList.remove("hide");
+		eicrSub.classList.add("hide");
+
+		epcSub.classList.add("hide");
+		patSub.classList.add("hide");
+		patcSub.classList.add("hide");
+	} else if (serviceName == "EPC (Residential)") {
+		epcSub.classList.remove("hide");
+		eicrSub.classList.add("hide");
+		gasSub.classList.add("hide");
+
+		patSub.classList.add("hide");
+		patcSub.classList.add("hide");
+	} else if (serviceName == "PAT Testing Residential") {
+		patSub.classList.remove("hide");
+		eicrSub.classList.add("hide");
+		gasSub.classList.add("hide");
+		epcSub.classList.add("hide");
+
+		patcSub.classList.add("hide");
+	} else if (serviceName == "PAT Testing Commercial") {
+		patcSub.classList.remove("hide");
+		eicrSub.classList.add("hide");
+		gasSub.classList.add("hide");
+		epcSub.classList.add("hide");
+		patSub.classList.add("hide");
+	} else {
+		eicrSub.classList.add("hide");
+		gasSub.classList.add("hide");
+		epcSub.classList.add("hide");
+		patSub.classList.add("hide");
+		patcSub.classList.add("hide");
+	}
+});
+
 // mobile menu hide after click
 // const menuPath = document.querySelector(".navbar-collapse ");
 // const navPath = document.querySelector(".nav-link ");

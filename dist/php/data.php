@@ -1,6 +1,8 @@
 <?php
 // Check for empty fields
-if(empty($_POST['first-name'])  		||
+if(empty($_POST['address'])  		||
+   empty($_POST['certificate-name'])	||
+   empty($_POST['invoice-name'])	||
    empty($_POST['email'])	||
    empty($_POST['phone']) 		||
    empty($_POST['postcode'])	||
@@ -13,34 +15,37 @@ if(empty($_POST['first-name'])  		||
    }
 
    // File upload functionality
-$new_path = "No files Uploaded";
-$counter = 0;
-if(!empty($_FILES['uploaded_file']))
-  {
-    $path = "uploads/";
-    $path = $path . basename( $_FILES['uploaded_file']['name']);
+// $new_path = "No files Uploaded";
+// $counter = 0;
+// if(!empty($_FILES['uploaded_file']))
+//   {
+//     $path = "uploads/";
+//     $path = $path . basename( $_FILES['uploaded_file']['name']);
 
-    if(move_uploaded_file($_FILES['uploaded_file']['tmp_name'], $path)) {
-    //   $new_path = "<a href=" .$path. ">Check here</a>";
-    //   $new_path = "<a href=" echo $path ">Check here</a>";
-      $new_path = "https://handymanco.co.uk/dist/php/".$path;
-    //   $counter = 1;
+//     if(move_uploaded_file($_FILES['uploaded_file']['tmp_name'], $path)) {
+//       $new_path = "https://handymanco.co.uk/dist/php/".$path;
   
-    } else{
-        echo "There was an error uploading the file, please try again!";
-    }
-  }
+  
+//     } else{
+//         echo "There was an error uploading the file, please try again!";
+//     }
+//   }
+
+$address = $_POST['address'];
+$certificate_name = $_POST['certificate-name'];
+$invoice_name = $_POST['invoice-name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
 
 
+$service_name = $_POST['service'];
+$service_sub = $_POST['service-sub'];
+$congestion = $_POST['congestion'];
+$date = $_POST['date'];
+$timeslot = $_POST['timeslot'];
+$payment_method = $_POST['payment'];
 
-   
-$service_type = $_POST['first'];
-// $second = $_POST['check'];
-// $type = implode(', ', $second); //vehicle type
-$service_name = $_POST['second'];
-//$area = $_POST['type']; // in which area
-$urgency = $_POST['third']; //timeline
-$materials = $_POST['fourth']; //material purchase
 
 
 // if(!empty($second)) {
@@ -51,25 +56,23 @@ $materials = $_POST['fourth']; //material purchase
 
 // }
 
-$first_name = $_POST['first-name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$postcode = $_POST['postcode'];
-$message = $_POST['message'];
+
 
 	
 // Create the email and send the message
 
 $to = 'tripkeys@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Website Quote Engine:  $first_name";
+$email_subject = "Appointment for Property Inspection";
 
-$email_body = "You have received a new message from your Handyman website Quote Engine .\n\n"."Here are the details:\n\nFirst Name: $first_name\n Postcode: $postcode \nPhone: $phone\nEmail: $email\n Message: $message
+$email_body = "You have received a new message from your Property Inspection website .\n\n"."Here are the details:\n\nPhone: $phone\nEmail: $email\n Message: $message
 
-\n\n\n Here is the Quote Request: \n Place to service: $service_type\n Service Name: $service_name\n Urgency: $urgency\n Materials: $materials\n Uploaded File: " .$new_path;
+\n\n\n Here is the service Request: \n  Service Name: $service_name\n Number of items:$service_sub \n Congestion Zone: $congestion \n Address: $address \n Date: $date\n Time: $timeslot \n Payment Method: $payment_method \n Name to go on Certificate: $certificate_name \n Name to go on Invoice: $invoice_name
 
-// Weekly Price range: $price_range\n Area: $area \n How urgent : $urgency \n  For how long: $timeline 
+" ;
 
-$headers = "From: noreply@handymanco.co.uk\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+
+
+$headers = "From: noreply@handymanco.uk\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 
 $headers .= "Reply-To: $email";	
 mail($to,$email_subject,$email_body,$headers);

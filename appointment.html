@@ -1,0 +1,508 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<!-- Bootstrap CDN for css -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="./scss/style.css" />
+
+		<title>Appointment | London Property inspection</title>
+
+		<!-- Favicons
+			================================================== -->
+		<!-- <link rel="icon" href="./dist/img/favicon.png" type="image/x-icon" />
+			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./dist/img/favicon.png" />
+			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./dist/img/favicon.png" />
+			<link rel="apple-touch-icon-precomposed" href="./dist/img/favicon.png" /> -->
+	</head>
+	<body data-spy="scroll" data-target="#menu">
+		<div class="wrapper">
+			<section class="whatsapp-icon">
+				<a href="https://wa.me/447957573632"
+					><i class="fab fa-whatsapp-square fa-3x"></i
+				></a>
+			</section>
+			<section class="top-header">
+				<div class="container-md">
+					<div class="row d-flex align-items-center">
+						<div class="col-md-4">
+							<div class="working-day text-left">
+								<p class="text-uppercase">mon - sat: 9 AM - 6 PM</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="slogan text-center">
+								<p>We make a customer, not a sale!</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="quick-contact text-right">
+								<p class="center-align phone">
+									<img src="./dist/img/call-white.png" alt="Contact" />
+									<a class="" href="tel:020 8088 3646">020 8088 3646</a>
+								</p>
+								<p>
+									<a class="" href="mailto:info@domain.co.uk"
+										>info@domain.co.uk</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+				<a href="./index.html" class="navbar-brand">
+					<img
+						class="img-fluid img-responsive"
+						src="./dist/img/logo.png"
+						alt="London Propery Inspection logo"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="./index.html">Home </a>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Services
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="./gas-certificate.html"
+									>Gas certificate</a
+								>
+								<a class="dropdown-item" href="./gas-safety.html"
+									>Gas safety check</a
+								>
+								<a class="dropdown-item" href="./eicr.html">Eicr</a>
+								<a class="dropdown-item" href="./eicr-testing.html"
+									>eicr testing</a
+								>
+								<a class="dropdown-item" href="./pat-testing.html"
+									>pat certificate</a
+								>
+								<a class="dropdown-item" href="./fire-assessment.html"
+									>fire risk assessment</a
+								>
+								<a class="dropdown-item" href="./epc.html">epc</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="./contact.html">contact us</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link button" id="button" href="./appointment.html"
+								><i class="fas fa-arrow-right mr-2"></i> Book now
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section
+				class="page-header align-items-center"
+				style="
+					background-image: url('./dist/image/booking-bg.jpg');
+					min-height: 400px;
+					padding: 150px 0;
+				"
+			>
+				<div class="container-lg">
+					<div class="row">
+						<div class="col">
+							<div class="ph-text">
+								<div class="ph-title text-center text-uppercase">
+									<h1>Book an appointment</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="content-wrapper">
+				<div class="container-md">
+					<div class="row">
+						<div class="col-md-10 offset-md-1">
+							<section class="about" id="about">
+								<div class="appointment-form">
+									<div class="heading">
+										<h1 class="text-uppercase">Get an Appointment</h1>
+									</div>
+									<form action="./dist/php/data.php" method="POST">
+										<div class="row">
+											<!-- service -->
+											<div class="col-md-6">
+												<div class="form-group">
+													<select
+														class="form-control service-item"
+														id="exampleFormControlSelect1"
+														name="service"
+													>
+														<option>-select service-</option>
+														<option
+															value="Electrical Certificate (EICR) - Residential"
+															>Electrical Certificate (EICR) -
+															Residential</option
+														>
+														<option
+															value="Electrical Certificate (EICR) -
+															commercial"
+															>Electrical Certificate (EICR) -
+															commercial</option
+														>
+														<option value="Gas Safety Certificate - CP12"
+															>Gas Safety Certificate - CP12</option
+														>
+														<option
+															value="Gas safety certificate + boiler service"
+															>Gas safety certificate + boiler service</option
+														>
+														<option value="EPC (Residential)"
+															>EPC (Residential)</option
+														>
+														<option value="EPC (Commercial)"
+															>EPC (Commercial)</option
+														>
+														<option value="PAT Testing Residential"
+															>PAT Testing Residential</option
+														>
+														<option value="PAT Testing Commercial"
+															>PAT Testing Commercial</option
+														>
+														<option value="Fire Alarm Certificate - Residential"
+															>Fire Alarm Certificate - Residential</option
+														>
+														<option
+															value="Emergency Lighting Certificate -
+															Residential"
+															>Emergency Lighting Certificate -
+															Residential</option
+														>
+														<option value="Fire Risk Report"
+															>Fire Risk Report</option
+														>
+													</select>
+												</div>
+											</div>
+											<!-- sub-services -->
+											<div class="col-md-6 eicr-sub hide">
+												<div class="form-group">
+													<select
+														class="form-control"
+														id="exampleFormControlSelect1"
+														name="service-sub"
+													>
+														<option>-select how many beds-</option>
+														<option value="studio">Studio</option>
+														<option value="1-2 Beds">1-2 Beds</option>
+														<option value="3-4 Beds">3-4 Beds</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-6 gas-sub hide">
+												<div class="form-group">
+													<select
+														class="form-control"
+														id="exampleFormControlSelect1"
+														name="service-sub"
+													>
+														<option>-select how many Appliances-</option>
+														<option value="Gas certificate 1 appliance"
+															>Gas certificate 1 appliance</option
+														>
+														<option value="Gas certificate 2 appliance"
+															>Gas certificate 2 appliance</option
+														>
+														<option value="Gas certificate 3 appliance"
+															>Gas certificate 3 appliance</option
+														>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-6 epc-sub hide">
+												<div class="form-group">
+													<select
+														class="form-control"
+														id="exampleFormControlSelect1"
+														name="service-sub"
+													>
+														<option>-select how many beds-</option>
+
+														<option value="1-2 Beds">1-2 Beds</option>
+														<option value="3-4 Beds">3-5 Beds</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-6 pat-sub hide">
+												<div class="form-group">
+													<select
+														class="form-control"
+														id="exampleFormControlSelect1"
+														name="service-sub"
+													>
+														<option>-select how many appliances-</option>
+														<option value="1-20 items">1-20 items</option>
+														<option value="20-40 items">20-40 items</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-6 patc-sub hide">
+												<div class="form-group">
+													<select
+														class="form-control"
+														id="exampleFormControlSelect1"
+														name="service-sub"
+													>
+														<option>-select how many appliances-</option>
+														<option value="1-20 items">1-20 items</option>
+														<option value="20-40 items">20-40 items</option>
+														<option value="40-60 items">40-60 items</option>
+													</select>
+												</div>
+											</div>
+											<!-- congestion zone -->
+											<div class="col-md-12">
+												<div class="form-group">
+													<select
+														class="form-control"
+														id="exampleFormControlSelect1"
+														name="congestion"
+													>
+														<option>-Select Congestion Zone-</option>
+														<option value="outside"
+															>Property outside Congestion Zone</option
+														>
+														<option value="inside"
+															>Property inside Congestion Zone</option
+														>
+													</select>
+												</div>
+											</div>
+											<!-- address -->
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea
+														class="form-control"
+														id="exampleFormControlTextarea1"
+														placeholder="Address of inspection"
+														rows="3"
+														name="address"
+														required
+													></textarea>
+												</div>
+											</div>
+											<!-- date -->
+											<div class="col-md-6">
+												<div class="form-group">
+													<input
+														type="date"
+														class="form-control"
+														name="date"
+														id="date"
+													/>
+												</div>
+											</div>
+											<!-- timeslote -->
+											<div class="col-md-6">
+												<div class="form-group">
+													<select
+														class="form-control"
+														id="exampleFormControlSelect1"
+														name="timeslot"
+													>
+														<option>-select time slot-</option>
+														<option value="9 am - 12 pm">9 am - 12 pm</option>
+														<option value="12 pm - 3 pm">12 pm - 3 pm</option>
+														<option value="3 pm - 6 pm">3 pm - 6 pm</option>
+														<option value="Anytime">Anytime</option>
+													</select>
+												</div>
+											</div>
+											<!-- certificate name -->
+											<div class="col-md-6">
+												<div class="form-group">
+													<input
+														type="text"
+														class="form-control"
+														placeholder=" Name to go on certificate: "
+														name="certificate-name"
+														required
+													/>
+												</div>
+											</div>
+											<!-- invoice name -->
+											<div class="col-md-6">
+												<div class="form-group">
+													<input
+														type="text"
+														class="form-control"
+														placeholder=" Name to go on invoice: "
+														name="invoice-name"
+														required
+													/>
+												</div>
+											</div>
+											<!-- email -->
+											<div class="col-md-6">
+												<div class="form-group">
+													<input
+														type="email"
+														class="form-control"
+														id="exampleInputEmail1"
+														placeholder="Email: "
+														aria-describedby="emailHelp"
+														name="email"
+														required
+													/>
+												</div>
+											</div>
+											<!-- phone -->
+											<div class="col-md-6">
+												<div class="form-group">
+													<input
+														type="text"
+														class="form-control"
+														placeholder="Phone: "
+														name="phone"
+														required
+													/>
+												</div>
+											</div>
+											<!-- radio -->
+											<div class="col-md-12">
+												<div class="form-radio">
+													<label>
+														<input
+															class="with-gap"
+															name="payment"
+															value="bank transfer"
+															type="radio"
+														/>
+														<span>Pay via Bank transfer</span>
+													</label>
+													<br />
+													<label>
+														<input
+															class="with-gap"
+															name="payment"
+															value="credit card"
+															type="radio"
+														/>
+														<span>Pay by Credit card</span>
+													</label>
+												</div>
+											</div>
+											<!-- message -->
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea
+														class="form-control"
+														id="exampleFormControlTextarea1"
+														placeholder="Use this space to list: *contact details for access - if your property is tenanted, why not save time and let us contact your tenants directly. Please also notify us of anything else we may need to bring with us to do the inspection such as, ladders, fire brigade key, etc. Also you can use this space for any other requirements you have."
+														rows="5"
+														name="message"
+														required
+													></textarea>
+												</div>
+											</div>
+										</div>
+
+										<button type="submit" class="btn button">
+											Submit <i class="fas fa-paper-plane ml-2"></i>
+										</button>
+									</form>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="sticky-mobile d-sm-block d-md-none">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<p class="center-align">
+								<img src="./dist/img/call-white.png" alt="Contact" />
+								<a class="" href="tel:020 8088 3646">020 8088 3646</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="footer d-none d-md-block">
+				<div class="container-md text-center">
+					<p>We accept all major credit cards</p>
+					<p>
+						<i class="fab fa-3x fa-cc-mastercard"></i>
+						<i class="fab fa-3x fa-cc-visa"></i>
+						<i class="fab fa-3x fa-cc-amex"></i>
+						<i class="fab fa-3x fa-cc-discover"></i>
+					</p>
+					<p class="copy text-center">
+						Copyright © 2020 London Property Inspection. All rights reserved.
+					</p>
+					<p class="text-center">
+						<a href="./privacy-policy.html">Privacy Policy</a> |
+						<a href="./terms-condition.html">Terms & Conditions</a>
+					</p>
+				</div>
+			</section>
+		</div>
+
+		<!-- bootstrap js CDN -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- fontawesome cdn -->
+		<script
+			src="https://kit.fontawesome.com/27ad0ca7fa.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="./dist/js/app.js"></script>
+	</body>
+</html>
