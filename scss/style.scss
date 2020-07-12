@@ -69,6 +69,10 @@ body {
 	position: fixed;
 	right: 25px;
 	bottom: 25px;
+	@media (max-width: 767px) {
+		right: 5px;
+		bottom: 5px;
+	}
 
 	z-index: 100;
 	a {

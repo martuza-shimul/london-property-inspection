@@ -283,6 +283,10 @@ a:hover {
   background: rgba(60, 88, 153, 0.9);
 }
 
+.navbar.scrolled .navbar-brand img {
+  max-height: 55px;
+}
+
 .navbar.scrolled .navbar-nav .nav-item .nav-link {
   color: #fff;
 }
@@ -1164,6 +1168,13 @@ a:hover {
   padding: 5vh 0;
 }
 
+@media (max-width: 767px) {
+  .content-wrapper,
+  .other-content {
+    margin-bottom: 50px;
+  }
+}
+
 .content-wrapper h3,
 .other-content h3 {
   font-size: 1.4rem;
@@ -1222,6 +1233,10 @@ a:hover {
 
 .navbar-dark .navbar-toggler-icon {
   background-image: url(../dist/image/nav-icon.svg);
+}
+
+.navbar-dark .navbar-toggler-icon svg {
+  fill: #62d497;
 }
 
 .navbar-dark .navbar-toggler {
@@ -1481,6 +1496,13 @@ body {
   right: 25px;
   bottom: 25px;
   z-index: 100;
+}
+
+@media (max-width: 767px) {
+  .whatsapp-icon {
+    right: 5px;
+    bottom: 5px;
+  }
 }
 
 .whatsapp-icon a i {

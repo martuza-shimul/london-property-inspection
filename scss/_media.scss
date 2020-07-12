@@ -1,5 +1,8 @@
 .navbar-dark .navbar-toggler-icon {
 	background-image: url(../dist/image/nav-icon.svg);
+	svg {
+		fill: $secondary-color;
+	}
 }
 .navbar-dark .navbar-toggler {
 	color: transparent;

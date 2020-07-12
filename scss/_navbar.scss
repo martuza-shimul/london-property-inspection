@@ -94,6 +94,11 @@
 		width: 100vw;
 		height: 65px;
 		background: rgba($primary-color, 0.9);
+		.navbar-brand {
+			img {
+				max-height: 55px;
+			}
+		}
 		.navbar-nav {
 			.nav-item {
 				.nav-link {

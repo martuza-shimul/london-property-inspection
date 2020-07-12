@@ -1,6 +1,9 @@
 .content-wrapper,
 .other-content {
 	padding: 5vh 0;
+	@media (max-width: 767px) {
+		margin-bottom: 50px;
+	}
 	h3 {
 		font-size: 1.4rem;
 		line-height: 2.4rem;
