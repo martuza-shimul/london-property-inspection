@@ -82,8 +82,8 @@ button:focus {
 	text-transform: capitalize;
 	font-weight: 600;
 	padding: 0.7rem 1rem;
-	@media (min-width: 576px) and (max-width: 605px) {
-		font-size: 0.7rem;
+	@media (min-width: 576px) and (max-width: 650px) {
+		font-size: 0.6rem;
 	}
 	@media (max-width: 305px) {
 		font-size: 0.5rem;

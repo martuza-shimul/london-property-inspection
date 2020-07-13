@@ -96,9 +96,9 @@ button:focus {
   padding: 0.7rem 1rem;
 }
 
-@media (min-width: 576px) and (max-width: 605px) {
+@media (min-width: 576px) and (max-width: 650px) {
   .wb-button {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
 
