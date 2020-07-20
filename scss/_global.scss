@@ -150,3 +150,40 @@ a {
 		color: $text-color;
 	}
 }
+
+.review-wrapper {
+	// background-color: $secondary-color;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	img {
+		max-width: 100%;
+	}
+	.thumbs {
+		width: 90%;
+		display: flex;
+		// align-items: center;
+		justify-content: space-between;
+		color: $warning;
+		a {
+			color: inherit;
+		}
+		a:last-child {
+			color: $secondary-color;
+		}
+	}
+	h1 {
+		color: $primary-color;
+		font-size: 95px;
+		line-height: 1.6;
+		letter-spacing: 2px;
+		font-weight: 700;
+		text-transform: uppercase;
+		@media (max-width: 767px) {
+			font-size: 35px;
+		}
+	}
+}
