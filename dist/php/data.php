@@ -1,8 +1,8 @@
 <?php
 // Check for empty fields
 if(empty($_POST['address'])  		||
-   empty($_POST['certificate-name'])	||
-   empty($_POST['invoice-name'])	||
+   empty($_POST['certificate_name'])	||
+   empty($_POST['invoice_name'])	||
    empty($_POST['email'])	||
    empty($_POST['phone']) 		||
    empty($_POST['postcode'])	||

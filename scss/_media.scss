@@ -70,11 +70,11 @@
 			}
 		}
 	}
-	.navbar {
-		&.scrolled {
-			background: $primary-color;
-		}
-	}
+	// .navbar {
+	// 	&.scrolled {
+	// 		background: $primary-color;
+	// 	}
+	// }
 	.navbar-nav {
 		background: rgba($text-rev, 0.95);
 	}
