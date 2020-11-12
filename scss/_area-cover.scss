@@ -1,28 +1,21 @@
-.area-cover {
-	padding: 5vh 0;
-	.flex-container {
-		display: flex;
-		flex-wrap: wrap;
-		margin-top: 20px;
-	}
-	.flex-item {
-		flex: 1;
-		// flex-wrap: wrap;
-		min-width: 200px;
-		li {
-			max-width: 185px;
-		}
-	}
+.content-wrapper.areas-cover {
+  .location-col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 25px;
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
 
-	.tabs .tab a {
-		color: $text-color;
-		font-size: 1rem;
-		margin-top: -10px;
-		text-transform: capitalize;
-	}
-	.tabs .indicator {
-		height: 3px;
-		// width: 10%;
-		background-color: $secondary-color;
-	}
+    li {
+      flex-basis: 30%;
+
+      @media (max-width: 767px) {
+        flex-basis: 50%;
+      }
+    }
+  }
 }
